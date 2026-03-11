@@ -1,12 +1,33 @@
 import type { Metadata } from 'next'
 import './globals.css'
-import Header from '@/components/Header'
-import Footer from '@/components/Footer'
 
 export const metadata: Metadata = {
-  title: 'Digital Energy | Strategic Consulting',
-  description: 'Boutique consulting firm. Strategy. Intelligence. Growth.',
-  keywords: 'consulting, strategy, business, marketing, digital transformation',
+  title: {
+    default: 'Digital Energy | Gruppo di Innovazione Digitale',
+    template: '%s | Digital Energy',
+  },
+  description: 'Progettiamo, sviluppiamo e lanciamo prodotti digitali propri. ORYX, CalcoloPro+, Hub DE — dal concept al mercato internazionale.',
+  keywords: 'digital energy, innovazione digitale, prodotti digitali, SaaS, ORYX, CalcoloPro, Hub DE, sviluppo software, fintech, luxury mobility',
+  authors: [{ name: 'Digital Energy Ltd.' }],
+  creator: 'Digital Energy Ltd.',
+  metadataBase: new URL('https://digitalenergy.solutions'),
+  openGraph: {
+    type: 'website',
+    locale: 'it_IT',
+    alternateLocale: ['en_US', 'bg_BG', 'es_ES'],
+    siteName: 'Digital Energy',
+    title: 'Digital Energy | Gruppo di Innovazione Digitale',
+    description: 'Progettiamo, sviluppiamo e lanciamo prodotti digitali propri — dal concept al mercato internazionale.',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Digital Energy | Gruppo di Innovazione Digitale',
+    description: 'Progettiamo, sviluppiamo e lanciamo prodotti digitali propri.',
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
   icons: {
     icon: [
       { url: '/favicon.ico' },
@@ -21,13 +42,5 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
-  return (
-    <html lang="en">
-      <body className="bg-de-black min-h-screen">
-        <Header />
-        <main>{children}</main>
-        <Footer />
-      </body>
-    </html>
-  )
+  return children
 }

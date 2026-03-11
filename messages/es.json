@@ -1,0 +1,63 @@
+{
+  "nav": { "home": "Inicio", "portfolio": "Portfolio", "about": "Nosotros", "contact": "Contacto" },
+  "hero": {
+    "label": "Digital Energy",
+    "title": "Creamos productos digitales que transforman mercados",
+    "desc": "Somos un grupo de innovacion digital. Disenamos, desarrollamos y lanzamos nuestras propias plataformas tecnologicas — del concepto al mercado.",
+    "cta1": "Nuestros Proyectos",
+    "cta2": "Contactanos"
+  },
+  "what": {
+    "label": "Que Hacemos",
+    "title": "No somos una consultora tradicional",
+    "desc": "Digital Energy identifica oportunidades de mercado, crea productos digitales y los lleva al exito. Cada proyecto nace de nuestra vision y se desarrolla internamente a traves de Hub DE.",
+    "items": {
+      "ideation": { "title": "Ideacion y Estrategia", "desc": "Identificamos brechas de mercado y desarrollamos conceptos de producto con modelos de negocio validados." },
+      "development": { "title": "Desarrollo y Tecnologia", "desc": "A traves de Hub DE construimos plataformas SaaS, apps y soluciones AI con tecnologias de vanguardia." },
+      "launch": { "title": "Lanzamiento y Crecimiento", "desc": "Llevamos productos al mercado con estrategias go-to-market, marketing digital y optimizacion continua." },
+      "investment": { "title": "Inversiones y Advisory", "desc": "Asesoria estrategica para inversiones inmobiliarias, financiacion de proyectos y partnerships internacionales." }
+    }
+  },
+  "projects": {
+    "label": "Nuestros Proyectos",
+    "title": "Portfolio",
+    "desc": "Productos digitales creados, desarrollados y gestionados por Digital Energy. Actualmente tenemos 3 proyectos mas en desarrollo.",
+    "oryx": { "label": "Movilidad Premium", "title": "ORYX", "desc": "Plataforma de movilidad privada de lujo. Shuttle, chofer, seguridad, yacht charter y reservaciones en destinos exclusivos como Ibiza, Mykonos, Dubai y Monaco.", "status": "En Lanzamiento", "tags": ["Movilidad", "Lujo", "Marketplace", "App iOS"] },
+    "calcolopro": { "label": "Plataforma SaaS", "title": "CalcoloPro+", "desc": "Plataforma profesional de gestion de portfolio con extraccion OCR automatizada, dashboard analytics en tiempo real e integracion con Telegram bot.", "status": "Activo", "tags": ["SaaS", "Analytics", "OCR", "Fintech"] },
+    "hubde": { "label": "Estudio de Software", "title": "Hub Digital Energy", "desc": "Nuestro estudio de desarrollo de software. Especializado en plataformas SaaS, automatizacion, dashboards, integraciones AI y consultoria digital.", "status": "Activo", "tags": ["Desarrollo", "SaaS", "AI", "Automatizacion"] }
+  },
+  "stats": { "products": "Productos", "countries": "Paises", "uptime": "Uptime", "year": "Fundacion" },
+  "about": {
+    "label": "Nosotros",
+    "title": "Un grupo que construye, no solo aconseja",
+    "desc1": "Digital Energy es un grupo europeo de innovacion digital. No ofrecemos consultoria generica — creamos nuestros propios productos digitales y los llevamos al mercado internacional.",
+    "desc2": "Desde la movilidad de lujo al fintech, desde el desarrollo de software a las oportunidades inmobiliarias, operamos donde vemos potencial de transformacion digital.",
+    "desc3": "Cada proyecto nace de nuestra vision, lo desarrolla nuestro equipo y crece con nuestro apoyo continuo.",
+    "more": "Descubre mas",
+    "pageTitle": "Nosotros",
+    "values": { "label": "Nuestros Principios", "title": "Como Trabajamos", "ownership": { "title": "Ownership", "desc": "Construimos nuestros propios productos. Creemos en ellos, los usamos, los hacemos crecer." }, "excellence": { "title": "Excelencia", "desc": "Los mas altos estandares en diseno, tecnologia y experiencia de usuario." }, "speed": { "title": "Velocidad", "desc": "Del concepto al mercado rapidamente, sin comprometer la calidad." }, "global": { "title": "Vision Global", "desc": "Pensamos y operamos internacionalmente desde el primer dia." } },
+    "process": { "label": "Nuestro Proceso", "title": "Del Concepto al Mercado", "steps": { "s1": { "num": "01", "title": "Discovery", "desc": "Analisis de mercado, identificacion de oportunidades, validacion del concepto." }, "s2": { "num": "02", "title": "Build", "desc": "Diseno, desarrollo y testing de la plataforma a traves de Hub DE." }, "s3": { "num": "03", "title": "Launch", "desc": "Go-to-market, adquisicion de usuarios, iteracion basada en datos." }, "s4": { "num": "04", "title": "Scale", "desc": "Optimizacion, expansion a nuevos mercados, crecimiento sostenible." } } }
+  },
+  "cta": { "title": "Tienes un proyecto?", "desc": "Partnership, inversion o colaboracion tecnologica — estamos abiertos a explorar nuevas oportunidades.", "button": "Hablemos" },
+  "contact": { "label": "Contacto", "pageTitle": "Hablemos", "desc": "Siempre estamos abiertos a nuevas oportunidades de colaboracion, partnership e inversion.", "email": "Email", "response": "Respuesta", "responseVal": "Dentro de 24 horas", "location": "Sede", "locationVal": "Europa", "form": { "name": "Nombre", "namePh": "Tu nombre", "email": "Email", "emailPh": "tu@email.com", "company": "Empresa", "companyPh": "Empresa (opcional)", "interest": "Interes", "interestPh": "Selecciona", "interests": { "partnership": "Partnership", "investment": "Inversion", "tech": "Colaboracion Tecnologica", "other": "Otro" }, "message": "Mensaje", "messagePh": "Cuentanos tu idea...", "send": "Enviar", "sending": "Enviando...", "sent": "Enviado", "sentDesc": "Te responderemos en 24 horas.", "another": "Enviar otro" } },
+  "footer": { "desc": "Grupo de innovacion digital. Creamos, desarrollamos y lanzamos nuestros propios productos tecnologicos.", "nav": "Navegacion", "connect": "Contacto", "email": "Email", "linkedin": "LinkedIn", "privacy": "Privacidad", "terms": "Terminos", "rights": "Todos los derechos reservados." },
+  "cookies": {
+    "message": "Usamos cookies tecnicas para el funcionamiento del sitio y cookies analiticas para mejorar tu experiencia.",
+    "learnMore": "Politica de Cookies",
+    "accept": "Aceptar",
+    "decline": "Rechazar"
+  },
+  "cookiePolicy": {
+    "title": "Politica de Cookies",
+    "lastUpdate": "Ultima actualizacion",
+    "sections": {
+      "what": { "title": "Que son las Cookies", "content": "Las cookies son pequenos archivos de texto que los sitios web guardan en tu dispositivo. Ayudan al funcionamiento del sitio y mejoran la experiencia de usuario." },
+      "types": { "title": "Tipos de Cookies", "content": "Cookies tecnicas: necesarias para el funcionamiento del sitio (sesion, preferencias de idioma). No requieren consentimiento. Cookies analiticas: Google Analytics, para analizar el trafico de forma anonima. Se activan solo con tu consentimiento." },
+      "thirdParty": { "title": "Cookies de Terceros", "content": "El sitio puede usar servicios de terceros (Google Analytics) que instalan sus propias cookies." },
+      "manage": { "title": "Gestion de Cookies", "content": "Puedes gestionar las preferencias de cookies en cualquier momento desde la configuracion de tu navegador." },
+      "contact": { "title": "Contacto", "content": "Para preguntas: info@digitalenergy.solutions." }
+    }
+  },
+  "privacy": { "title": "Politica de Privacidad", "lastUpdate": "Ultima actualizacion", "sections": { "intro": { "title": "Introduccion", "content": "Digital Energy Ltd. protege tu privacidad." }, "data": { "title": "Datos", "content": "Solo recopilamos datos del formulario de contacto." }, "purpose": { "title": "Finalidad", "content": "Usamos los datos para responder consultas." }, "retention": { "title": "Retencion", "content": "Los datos se conservan solo lo necesario." }, "rights": { "title": "Derechos", "content": "Contacta info@digitalenergy.solutions para acceso a tus datos." }, "contact": { "title": "Contacto", "content": "info@digitalenergy.solutions" } } },
+  "terms": { "title": "Terminos de Servicio", "lastUpdate": "Ultima actualizacion", "sections": { "general": { "title": "General", "content": "Sitio operado por Digital Energy Ltd." }, "ip": { "title": "Propiedad Intelectual", "content": "Todo el contenido es propiedad de Digital Energy Ltd." }, "liability": { "title": "Responsabilidad", "content": "Informacion con fines informativos." }, "contact": { "title": "Contacto", "content": "info@digitalenergy.solutions" } } }
+}

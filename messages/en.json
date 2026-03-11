@@ -1,0 +1,115 @@
+{
+  "nav": { "home": "Home", "portfolio": "Portfolio", "about": "About", "contact": "Contact" },
+  "hero": {
+    "label": "Digital Energy",
+    "title": "We build digital products that transform markets",
+    "desc": "We are a digital innovation group. We design, develop and launch our own technology platforms — from concept to market.",
+    "cta1": "Our Projects",
+    "cta2": "Get in Touch"
+  },
+  "what": {
+    "label": "What We Do",
+    "title": "Not a traditional consultancy",
+    "desc": "Digital Energy identifies market opportunities, creates digital products and drives them to success. Every project is born from our vision and developed internally through Hub DE, our technology arm.",
+    "items": {
+      "ideation": { "title": "Ideation & Strategy", "desc": "We identify market gaps and develop product concepts with validated business models." },
+      "development": { "title": "Development & Technology", "desc": "Through Hub DE we build SaaS platforms, apps and AI solutions with cutting-edge technologies." },
+      "launch": { "title": "Launch & Growth", "desc": "We bring products to market with go-to-market strategies, digital marketing and continuous optimization." },
+      "investment": { "title": "Investments & Advisory", "desc": "Strategic advisory for real estate investments, project funding and international partnerships." }
+    }
+  },
+  "projects": {
+    "label": "Our Projects",
+    "title": "Portfolio",
+    "desc": "Digital products created, developed and managed by Digital Energy. We currently have 3 more projects in development.",
+    "oryx": {
+      "label": "Premium Mobility",
+      "title": "ORYX",
+      "desc": "Private luxury mobility platform. Shuttle, chauffeur, security, yacht charter and reservations in exclusive destinations like Ibiza, Mykonos, Dubai and Monaco.",
+      "status": "Launching",
+      "tags": ["Mobility", "Luxury", "Marketplace", "iOS App"]
+    },
+    "calcolopro": {
+      "label": "SaaS Platform",
+      "title": "CalcoloPro+",
+      "desc": "Professional portfolio management platform with automated OCR data extraction, real-time analytics dashboard and Telegram bot integration.",
+      "status": "Live",
+      "tags": ["SaaS", "Analytics", "OCR", "Fintech"]
+    },
+    "hubde": {
+      "label": "Software Studio",
+      "title": "Hub Digital Energy",
+      "desc": "Our software development studio. Specializing in SaaS platforms, automation, analytics dashboards, AI integrations and digital consulting.",
+      "status": "Active",
+      "tags": ["Development", "SaaS", "AI", "Automation"]
+    }
+  },
+  "stats": { "products": "Products", "countries": "Countries", "uptime": "Uptime", "year": "Founded" },
+  "about": {
+    "label": "About Us",
+    "title": "A group that builds, not just advises",
+    "desc1": "Digital Energy is a European-based digital innovation group. We don't offer generic consulting — we create our own digital products and bring them to the international market.",
+    "desc2": "From luxury mobility to fintech, from software development to real estate opportunities, we operate where we see digital transformation potential.",
+    "desc3": "Every project is born from our vision, developed by our team and grows with our continuous support.",
+    "more": "Learn more",
+    "pageTitle": "About Us",
+    "values": {
+      "label": "Our Principles",
+      "title": "How We Work",
+      "ownership": { "title": "Ownership", "desc": "We build our own products. We believe in them, use them, grow them." },
+      "excellence": { "title": "Excellence", "desc": "Highest standards in design, technology and user experience." },
+      "speed": { "title": "Speed", "desc": "From concept to market quickly, without compromising quality." },
+      "global": { "title": "Global Vision", "desc": "We think and operate internationally from day one." }
+    },
+    "process": {
+      "label": "Our Process",
+      "title": "From Concept to Market",
+      "steps": {
+        "s1": { "num": "01", "title": "Discovery", "desc": "Market analysis, opportunity identification, concept validation." },
+        "s2": { "num": "02", "title": "Build", "desc": "Design, development and platform testing through Hub DE." },
+        "s3": { "num": "03", "title": "Launch", "desc": "Go-to-market, user acquisition, data-driven iteration." },
+        "s4": { "num": "04", "title": "Scale", "desc": "Optimization, new market expansion, sustainable growth." }
+      }
+    }
+  },
+  "cta": { "title": "Have a project in mind?", "desc": "Whether it's a partnership, investment or tech collaboration, we're open to exploring new opportunities.", "button": "Let's Talk" },
+  "contact": {
+    "label": "Contact",
+    "pageTitle": "Let's Talk",
+    "desc": "We're always open to new collaboration, partnership and investment opportunities. Tell us your idea.",
+    "email": "Email",
+    "response": "Response",
+    "responseVal": "Within 24 hours",
+    "location": "Based in",
+    "locationVal": "Europe",
+    "form": {
+      "name": "Name", "namePh": "Your name",
+      "email": "Email", "emailPh": "your@email.com",
+      "company": "Company", "companyPh": "Company (optional)",
+      "interest": "Interest", "interestPh": "Select",
+      "interests": { "partnership": "Partnership", "investment": "Investment", "tech": "Tech Collaboration", "other": "Other" },
+      "message": "Message", "messagePh": "Tell us about your idea...",
+      "send": "Send", "sending": "Sending...", "sent": "Message Sent", "sentDesc": "We'll get back to you within 24 hours.", "another": "Send another"
+    }
+  },
+  "footer": { "desc": "Digital innovation group. We create, develop and launch our own technology products.", "nav": "Navigation", "connect": "Contact", "email": "Email", "linkedin": "LinkedIn", "privacy": "Privacy", "terms": "Terms", "rights": "All rights reserved." },
+  "cookies": {
+    "message": "We use technical cookies to ensure the site works properly and analytics cookies to improve your experience.",
+    "learnMore": "Cookie Policy",
+    "accept": "Accept",
+    "decline": "Decline"
+  },
+  "cookiePolicy": {
+    "title": "Cookie Policy",
+    "lastUpdate": "Last updated",
+    "sections": {
+      "what": { "title": "What Are Cookies", "content": "Cookies are small text files that websites store on your device while browsing. They help the site function and improve user experience." },
+      "types": { "title": "Types of Cookies Used", "content": "Technical cookies: necessary for the site to function (session, language preferences). No consent required. Analytics cookies: Google Analytics, used to analyze traffic anonymously. Activated only with your consent." },
+      "thirdParty": { "title": "Third-Party Cookies", "content": "The site may use third-party services (Google Analytics) that install their own cookies. These services have their own privacy policies." },
+      "manage": { "title": "Managing Cookies", "content": "You can manage cookie preferences at any time from your browser settings. Disabling some cookies may affect site functionality." },
+      "contact": { "title": "Contact", "content": "For cookie policy questions: info@digitalenergy.solutions." }
+    }
+  },
+  "privacy": { "title": "Privacy Policy", "lastUpdate": "Last updated", "sections": { "intro": { "title": "Introduction", "content": "Digital Energy Ltd. is committed to protecting your privacy." }, "data": { "title": "Data Collected", "content": "We only collect data you voluntarily provide through our contact form." }, "purpose": { "title": "Purpose", "content": "We use your data exclusively to respond to your inquiries." }, "retention": { "title": "Retention", "content": "Data is retained only as long as needed to handle your request." }, "rights": { "title": "Your Rights", "content": "You can request access, rectification or deletion by contacting info@digitalenergy.solutions." }, "contact": { "title": "Contact", "content": "For privacy questions: info@digitalenergy.solutions." } } },
+  "terms": { "title": "Terms of Service", "lastUpdate": "Last updated", "sections": { "general": { "title": "General", "content": "This website is operated by Digital Energy Ltd." }, "ip": { "title": "Intellectual Property", "content": "All content is property of Digital Energy Ltd." }, "liability": { "title": "Liability", "content": "Information is provided for informational purposes only." }, "contact": { "title": "Contact", "content": "For questions: info@digitalenergy.solutions." } } }
+}

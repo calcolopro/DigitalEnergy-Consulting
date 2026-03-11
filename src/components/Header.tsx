@@ -1,70 +1,79 @@
 'use client'
 
-import { useState } from 'react'
-import Link from 'next/link'
+import { useState, useEffect } from 'react'
+import { useTranslations } from 'next-intl'
+import { Link } from '@/i18n/routing'
 import Image from 'next/image'
+import LanguageSelector from './LanguageSelector'
 
 export default function Header() {
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
+  const t = useTranslations('nav')
+  const [open, setOpen] = useState(false)
+  const [scrolled, setScrolled] = useState(false)
+  const [dark, setDark] = useState(true)
+
+  useEffect(() => {
+    const onScroll = () => {
+      setScrolled(window.scrollY > 40)
+      setDark(window.scrollY < window.innerHeight - 80)
+    }
+    window.addEventListener('scroll', onScroll)
+    return () => window.removeEventListener('scroll', onScroll)
+  }, [])
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-de-black/90 backdrop-blur-sm border-b border-de-gray">
-      <nav className="container-brutal flex items-center justify-between h-20">
-        {/* Logo */}
-        <Link href="/" className="flex items-center">
-          <Image 
-            src="/logo-de-colored.png" 
-            alt="Digital Energy" 
-            width={120} 
-            height={40}
-            className="h-8 w-auto"
+    <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
+      scrolled ? 'bg-offwhite/92 backdrop-blur-lg' : ''
+    }`}>
+      <nav className="wrap flex items-center justify-between h-24">
+        <Link href="/">
+          <Image
+            src={dark && !scrolled ? '/logo-de-white.png' : '/logo-de-dark.png'}
+            alt="DE" width={300} height={100} className="h-20 w-auto"
           />
         </Link>
 
-        {/* Desktop Navigation */}
-        <div className="hidden md:flex items-center gap-12">
-          <Link href="/" className="link-brutal text-sm uppercase tracking-widest">
-            Home
-          </Link>
-          <Link href="/services" className="link-brutal text-sm uppercase tracking-widest">
-            Services
-          </Link>
-          <Link href="/about" className="link-brutal text-sm uppercase tracking-widest">
-            About
-          </Link>
-          <Link href="/contact" className="btn-brutal">
-            Contact
+        <div className="hidden md:flex items-center gap-8">
+          {([
+            ['/', t('home')],
+            ['/portfolio', t('portfolio')],
+            ['/about', t('about')],
+          ] as const).map(([href, label]) => (
+            <Link key={href} href={href}
+              className={`link-nav transition-colors ${dark && !scrolled ? 'text-white hover:text-sabbia' : 'text-nero/60 hover:text-nero'}`}>
+              {label}
+            </Link>
+          ))}
+          <LanguageSelector dark={dark && !scrolled} />
+          <Link href="/contatti" className="btn btn-sand text-[11px] py-2 px-5">
+            {t('contact')}
           </Link>
         </div>
 
-        {/* Mobile Menu Button */}
-        <button
-          onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-          className="md:hidden w-10 h-10 flex flex-col items-center justify-center gap-1.5"
-          aria-label="Menu"
-        >
-          <span className={`w-6 h-0.5 bg-de-gold transition-all ${isMobileMenuOpen ? 'rotate-45 translate-y-2' : ''}`} />
-          <span className={`w-6 h-0.5 bg-de-gold transition-all ${isMobileMenuOpen ? 'opacity-0' : ''}`} />
-          <span className={`w-6 h-0.5 bg-de-gold transition-all ${isMobileMenuOpen ? '-rotate-45 -translate-y-2' : ''}`} />
-        </button>
+        <div className="flex items-center gap-3 md:hidden">
+          <LanguageSelector dark={dark && !scrolled} />
+          <button onClick={() => setOpen(!open)} className="w-8 h-8 flex flex-col items-center justify-center gap-[4px]" aria-label="Menu">
+            {[0,1,2].map(i => (
+              <span key={i} className={`w-4 h-px transition-all duration-300 ${dark && !scrolled ? 'bg-offwhite' : 'bg-nero'} ${
+                open && i===0 ? 'rotate-45 translate-y-[5px]' : open && i===1 ? 'opacity-0' : open && i===2 ? '-rotate-45 -translate-y-[5px]' : ''
+              }`}/>
+            ))}
+          </button>
+        </div>
       </nav>
 
-      {/* Mobile Menu */}
-      {isMobileMenuOpen && (
-        <div className="md:hidden fixed inset-0 top-20 bg-de-black z-40">
-          <div className="container-brutal py-12 flex flex-col gap-8">
-            <Link href="/" onClick={() => setIsMobileMenuOpen(false)} className="text-huge text-gold">
-              Home
-            </Link>
-            <Link href="/services" onClick={() => setIsMobileMenuOpen(false)} className="text-huge text-white hover:text-gold transition-colors">
-              Services
-            </Link>
-            <Link href="/about" onClick={() => setIsMobileMenuOpen(false)} className="text-huge text-white hover:text-gold transition-colors">
-              About
-            </Link>
-            <Link href="/contact" onClick={() => setIsMobileMenuOpen(false)} className="text-huge text-white hover:text-gold transition-colors">
-              Contact
-            </Link>
+      {open && (
+        <div className="md:hidden fixed inset-0 top-24 bg-offwhite z-40">
+          <div className="wrap py-10 flex flex-col gap-5">
+            {([
+              ['/', t('home')],
+              ['/portfolio', t('portfolio')],
+              ['/about', t('about')],
+              ['/contatti', t('contact')],
+            ] as const).map(([href, label]) => (
+              <Link key={href} href={href} onClick={() => setOpen(false)}
+                className="h2 hover:text-sabbia-dark transition-colors">{label}</Link>
+            ))}
           </div>
         </div>
       )}

@@ -9,22 +9,19 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        'de': {
-          'black': '#0a0a0a',
-          'dark': '#111111',
-          'gray': '#1a1a1a',
-          'muted': '#666666',
-          'light': '#999999',
-          'gold': '#d4af37',
-          'gold-light': '#f4d03f',
-          'green': '#2ecc71',
-          'green-dark': '#27ae60',
-        }
+        'nero': '#232323',
+        'sabbia': '#D4C4A8',
+        'sabbia-dark': '#B8A080',
+        'offwhite': '#FAFAF8',
+        'sand-bg': '#F0EBE3',
+        'grigio': '#666',
+        'grigio-light': '#888',
+        'border': '#E8E4DE',
       },
       fontFamily: {
-        'display': ['Syne', 'sans-serif'],
-        'body': ['DM Sans', 'sans-serif'],
-        'mono': ['JetBrains Mono', 'monospace'],
+        'serif': ['Cinzel', 'serif'],
+        'sans': ['DM Sans', 'sans-serif'],
+        'ui': ['Montserrat', 'sans-serif'],
       },
     },
   },
