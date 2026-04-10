@@ -7,7 +7,7 @@ import AnimatedSection from '@/components/AnimatedSection'
 const projectKeys = ['oryx', 'ibizaamigo', 'scanix', 'calcolopro', 'hubde'] as const
 const projectLinks: Record<string, string> = {
   oryx: 'https://ory-x.com',
-  ibizaamigo: 'https://www.ibizamigo.com',
+  ibizaamigo: 'https://ibizamigo.com',
   scanix: 'https://scanix.pro',
   calcolopro: 'https://calcolo-pro.com',
   hubde: 'https://hub-de.com',

@@ -51,7 +51,7 @@ export default async function LocaleLayout({
           name: 'Ibiza Amigo',
           applicationCategory: 'TravelApplication',
           description: 'AI-powered WhatsApp concierge for Ibiza — restaurants, clubs, boats, transfers and VIP services.',
-          url: 'https://ibizaamigo.com',
+          url: 'https://ibizamigo.com',
         },
       },
       {
