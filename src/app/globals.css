@@ -285,6 +285,15 @@ h3, .h3 {
 .form-input:focus { border-bottom-color: #D4C4A8; }
 .form-input::placeholder { color: #bbb; }
 
+/* ===== ORYX BANNER ===== */
+.oryx-banner {
+  background: #1a1a1a;
+  color: #FAFAF8;
+  padding: 1.25rem 0;
+  border-bottom: 1px solid rgba(212,196,168,0.15);
+}
+.oryx-banner .label { color: #4ade80; font-size: 0.6rem; }
+
 /* ===== RESPONSIVE ===== */
 @media (max-width: 768px) {
   .sec { padding: clamp(3rem, 6vw, 5rem) 0; }

@@ -21,8 +21,10 @@
   "projects": {
     "label": "Nuestros Proyectos",
     "title": "Portfolio",
-    "desc": "Productos digitales creados, desarrollados y gestionados por Digital Energy. Actualmente tenemos 3 proyectos mas en desarrollo.",
-    "oryx": { "label": "Movilidad Premium", "title": "ORYX", "desc": "Plataforma de movilidad privada de lujo. Shuttle, chofer, seguridad, yacht charter y reservaciones en destinos exclusivos como Ibiza, Mykonos, Dubai y Monaco.", "status": "En Lanzamiento", "tags": ["Movilidad", "Lujo", "Marketplace", "App iOS"] },
+    "desc": "Productos digitales creados, desarrollados y gestionados por Digital Energy — del concepto al mercado internacional.",
+    "oryx": { "label": "Movilidad Premium", "title": "ORYX", "desc": "Plataforma de movilidad privada de lujo, ahora disponible en iOS App Store. Reserva shuttles, chofer, seguridad y yacht charter en Ibiza, Mykonos, Dubai y Monaco — todo en una app.", "status": "Live", "tags": ["Movilidad", "Lujo", "Marketplace", "App iOS", "App Store"] },
+    "ibizaamigo": { "label": "Concierge Digital", "title": "Ibiza Amigo", "desc": "Tu concierge personal AI para Ibiza via WhatsApp. Restaurantes, clubs, yates, transfers y servicios VIP — recomendados y reservados en tiempo real por nuestra inteligencia artificial.", "status": "Lanzamiento 1 Mayo", "tags": ["AI", "WhatsApp", "Concierge", "Ibiza", "Viajes"] },
+    "scanix": { "label": "Gestion de Facturas AI", "title": "Scanix", "desc": "Plataforma AI para escaneo y gestion de facturas. Fotografa una factura, la AI la lee y tu contador recibe un reporte listo. OCR inteligente, categorizacion automatica y compartir con un clic.", "status": "Live", "tags": ["AI", "OCR", "Fintech", "SaaS", "Facturacion"] },
     "calcolopro": { "label": "Plataforma SaaS", "title": "CalcoloPro+", "desc": "Plataforma profesional de gestion de portfolio con extraccion OCR automatizada, dashboard analytics en tiempo real e integracion con Telegram bot.", "status": "Activo", "tags": ["SaaS", "Analytics", "OCR", "Fintech"] },
     "hubde": { "label": "Estudio de Software", "title": "Hub Digital Energy", "desc": "Nuestro estudio de desarrollo de software. Especializado en plataformas SaaS, automatizacion, dashboards, integraciones AI y consultoria digital.", "status": "Activo", "tags": ["Desarrollo", "SaaS", "AI", "Automatizacion"] }
   },
@@ -37,6 +39,19 @@
     "pageTitle": "Nosotros",
     "values": { "label": "Nuestros Principios", "title": "Como Trabajamos", "ownership": { "title": "Ownership", "desc": "Construimos nuestros propios productos. Creemos en ellos, los usamos, los hacemos crecer." }, "excellence": { "title": "Excelencia", "desc": "Los mas altos estandares en diseno, tecnologia y experiencia de usuario." }, "speed": { "title": "Velocidad", "desc": "Del concepto al mercado rapidamente, sin comprometer la calidad." }, "global": { "title": "Vision Global", "desc": "Pensamos y operamos internacionalmente desde el primer dia." } },
     "process": { "label": "Nuestro Proceso", "title": "Del Concepto al Mercado", "steps": { "s1": { "num": "01", "title": "Discovery", "desc": "Analisis de mercado, identificacion de oportunidades, validacion del concepto." }, "s2": { "num": "02", "title": "Build", "desc": "Diseno, desarrollo y testing de la plataforma a traves de Hub DE." }, "s3": { "num": "03", "title": "Launch", "desc": "Go-to-market, adquisicion de usuarios, iteracion basada en datos." }, "s4": { "num": "04", "title": "Scale", "desc": "Optimizacion, expansion a nuevos mercados, crecimiento sostenible." } } }
+  },
+  "news": {
+    "label": "Novedades",
+    "title": "Ibiza Amigo: Tu Concierge AI",
+    "desc": "Desde el 1 de mayo de 2026, tu concierge personal para Ibiza esta a un mensaje de WhatsApp. Restaurantes, clubs, barcos, transfers — todo recomendado y reservado en tiempo real por nuestra AI.",
+    "cta": "Descubre mas",
+    "badge": "Proximamente"
+  },
+  "oryx_cta": {
+    "label": "Disponible Ahora",
+    "title": "ORYX esta Live en App Store",
+    "desc": "Descarga nuestra app de movilidad premium para Ibiza.",
+    "button": "Descarga ORYX"
   },
   "cta": { "title": "Tienes un proyecto?", "desc": "Partnership, inversion o colaboracion tecnologica — estamos abiertos a explorar nuevas oportunidades.", "button": "Hablemos" },
   "contact": { "label": "Contacto", "pageTitle": "Hablemos", "desc": "Siempre estamos abiertos a nuevas oportunidades de colaboracion, partnership e inversion.", "email": "Email", "response": "Respuesta", "responseVal": "Dentro de 24 horas", "location": "Sede", "locationVal": "Europa", "form": { "name": "Nombre", "namePh": "Tu nombre", "email": "Email", "emailPh": "tu@email.com", "company": "Empresa", "companyPh": "Empresa (opcional)", "interest": "Interes", "interestPh": "Selecciona", "interests": { "partnership": "Partnership", "investment": "Inversion", "tech": "Colaboracion Tecnologica", "other": "Otro" }, "message": "Mensaje", "messagePh": "Cuentanos tu idea...", "send": "Enviar", "sending": "Enviando...", "sent": "Enviado", "sentDesc": "Te responderemos en 24 horas.", "another": "Enviar otro" } },

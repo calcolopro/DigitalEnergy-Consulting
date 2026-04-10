@@ -4,9 +4,11 @@ import { useTranslations } from 'next-intl'
 import { Link } from '@/i18n/routing'
 import AnimatedSection from '@/components/AnimatedSection'
 
-const projectKeys = ['oryx', 'calcolopro', 'hubde'] as const
+const projectKeys = ['oryx', 'ibizaamigo', 'scanix', 'calcolopro', 'hubde'] as const
 const projectLinks: Record<string, string> = {
   oryx: 'https://ory-x.com',
+  ibizaamigo: 'https://ibizaamigo.com',
+  scanix: 'https://scanix.pro',
   calcolopro: 'https://calcolo-pro.com',
   hubde: 'https://hub-de.com',
 }
@@ -33,14 +35,27 @@ export default function PortfolioPage() {
               <AnimatedSection>
                 <div className="flex items-center gap-3 mb-4">
                   <p className="label">{t(`projects.${key}.label`)}</p>
-                  <span className="text-[10px] font-ui font-semibold tracking-wider uppercase text-sabbia-dark bg-sand-bg px-2 py-0.5">
+                  <span className={`text-[10px] font-ui font-semibold tracking-wider uppercase px-2 py-0.5 ${
+                    key === 'ibizaamigo'
+                      ? 'text-white bg-nero'
+                      : 'text-sabbia-dark bg-sand-bg'
+                  }`}>
                     {t(`projects.${key}.status`)}
                   </span>
                 </div>
                 <h2 className="mb-4">{t(`projects.${key}.title`)}</h2>
                 <p className="body mb-6">{t(`projects.${key}.desc`)}</p>
-                <a href={projectLinks[key]} target="_blank" rel="noopener noreferrer"
-                  className="link">Visita il sito &#8599;</a>
+                {key === 'oryx' ? (
+                  <div className="flex flex-wrap gap-3">
+                    <a href={projectLinks[key]} target="_blank" rel="noopener noreferrer"
+                      className="link">Visita il sito &#8599;</a>
+                    <a href="https://apps.apple.com/app/oryx/id6504382482" target="_blank" rel="noopener noreferrer"
+                      className="link">App Store &#8599;</a>
+                  </div>
+                ) : (
+                  <a href={projectLinks[key]} target="_blank" rel="noopener noreferrer"
+                    className="link">Visita il sito &#8599;</a>
+                )}
               </AnimatedSection>
               <AnimatedSection delay={0.1}>
                 <div className="flex flex-wrap gap-2 md:justify-end">

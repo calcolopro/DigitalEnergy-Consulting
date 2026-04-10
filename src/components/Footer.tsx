@@ -13,7 +13,7 @@ export default function Footer() {
       <div className="wrap pt-20 pb-12">
         <div className="grid md:grid-cols-4 gap-10 mb-16">
           <div className="md:col-span-2">
-            <Image src="/logo-de-white.png" alt="DE" width={300} height={100} className="h-20 w-auto mb-8 opacity-80" />
+            <Image src="/logo-de-colored.png" alt="Digital Energy" width={300} height={300} className="h-14 w-auto mb-8 brightness-0 invert opacity-80" />
             <p className="body-sm max-w-xs">{t('desc')}</p>
           </div>
           <div className="pt-6">

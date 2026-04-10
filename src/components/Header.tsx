@@ -28,8 +28,15 @@ export default function Header() {
       <nav className="wrap flex items-center justify-between h-24">
         <Link href="/">
           <Image
-            src={dark && !scrolled ? '/logo-de-white.png' : '/logo-de-dark.png'}
-            alt="DE" width={300} height={100} className="h-20 w-auto"
+            src="/logo-de-colored.png"
+            alt="Digital Energy"
+            width={300}
+            height={300}
+            className={`h-12 w-auto transition-all duration-500 ${
+              dark && !scrolled
+                ? 'brightness-0 invert'
+                : 'brightness-0'
+            }`}
           />
         </Link>
 

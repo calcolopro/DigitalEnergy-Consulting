@@ -21,13 +21,27 @@
   "projects": {
     "label": "Our Projects",
     "title": "Portfolio",
-    "desc": "Digital products created, developed and managed by Digital Energy. We currently have 3 more projects in development.",
+    "desc": "Digital products created, developed and managed by Digital Energy — from concept to international market.",
     "oryx": {
       "label": "Premium Mobility",
       "title": "ORYX",
-      "desc": "Private luxury mobility platform. Shuttle, chauffeur, security, yacht charter and reservations in exclusive destinations like Ibiza, Mykonos, Dubai and Monaco.",
-      "status": "Launching",
-      "tags": ["Mobility", "Luxury", "Marketplace", "iOS App"]
+      "desc": "Private luxury mobility platform, now available on the iOS App Store. Book shuttles, chauffeurs, security and yacht charters in Ibiza, Mykonos, Dubai and Monaco — all in one app.",
+      "status": "Live",
+      "tags": ["Mobility", "Luxury", "Marketplace", "iOS App", "App Store"]
+    },
+    "ibizaamigo": {
+      "label": "Digital Concierge",
+      "title": "Ibiza Amigo",
+      "desc": "Your personal AI concierge for Ibiza via WhatsApp. Restaurants, clubs, yachts, transfers and VIP services — recommended and booked in real time by our artificial intelligence.",
+      "status": "Launching May 1",
+      "tags": ["AI", "WhatsApp", "Concierge", "Ibiza", "Travel"]
+    },
+    "scanix": {
+      "label": "AI Invoice Management",
+      "title": "Scanix",
+      "desc": "AI-powered invoice scanning and management platform. Snap a receipt, AI reads it, your accountant gets a ready report. Smart OCR, automatic categorization and one-click sharing.",
+      "status": "Live",
+      "tags": ["AI", "OCR", "Fintech", "SaaS", "Invoicing"]
     },
     "calcolopro": {
       "label": "SaaS Platform",
@@ -71,6 +85,19 @@
         "s4": { "num": "04", "title": "Scale", "desc": "Optimization, new market expansion, sustainable growth." }
       }
     }
+  },
+  "news": {
+    "label": "News",
+    "title": "Ibiza Amigo: Your AI Concierge",
+    "desc": "Starting May 1st, 2026, your personal Ibiza concierge is just a WhatsApp message away. Restaurants, clubs, boats, transfers — all recommended and booked in real time by our AI.",
+    "cta": "Learn more",
+    "badge": "Coming Soon"
+  },
+  "oryx_cta": {
+    "label": "Available Now",
+    "title": "ORYX is Live on App Store",
+    "desc": "Download our premium mobility app for Ibiza.",
+    "button": "Download ORYX"
   },
   "cta": { "title": "Have a project in mind?", "desc": "Whether it's a partnership, investment or tech collaboration, we're open to exploring new opportunities.", "button": "Let's Talk" },
   "contact": {
