@@ -7,7 +7,7 @@ import AnimatedSection from '@/components/AnimatedSection'
 const projectKeys = ['oryx', 'ibizaamigo', 'scanix', 'calcolopro', 'hubde'] as const
 const projectLinks: Record<string, string> = {
   oryx: 'https://ory-x.com',
-  ibizaamigo: 'https://ibizaamigo.com',
+  ibizaamigo: 'https://www.ibizamigo.com',
   scanix: 'https://scanix.pro',
   calcolopro: 'https://calcolo-pro.com',
   hubde: 'https://hub-de.com',
@@ -52,8 +52,6 @@ export default function PortfolioPage() {
                     <a href="https://apps.apple.com/app/oryx/id6504382482" target="_blank" rel="noopener noreferrer"
                       className="link">App Store &#8599;</a>
                   </div>
-                ) : key === 'ibizaamigo' ? (
-                  <span className="label">Coming Soon — 1 Maggio 2026</span>
                 ) : (
                   <a href={projectLinks[key]} target="_blank" rel="noopener noreferrer"
                     className="link">Visita il sito &#8599;</a>
