@@ -198,10 +198,10 @@
     "badge": "Coming Soon"
   },
   "oryx_cta": {
-    "label": "Available Now",
-    "title": "ORYX is Live on App Store",
-    "desc": "Download our premium mobility app for Ibiza.",
-    "button": "Download ORYX"
+    "label": "For operators",
+    "title": "ORYX Partner is on the App Store",
+    "desc": "The app for licensed VTC companies: vehicles, drivers, bookings, hojas de ruta and earnings, from your phone. Free for your drivers, with no limit.",
+    "button": "See on the App Store"
   },
   "cta": {
     "title": "Have a project in mind?",

@@ -65,7 +65,7 @@ export default function HomePage() {
                 </div>
               </div>
               <a
-                href="https://apps.apple.com/app/oryx/id6504382482"
+                href="https://apps.apple.com/app/oryx-partner/id6758917274"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn btn-brand shrink-0"
