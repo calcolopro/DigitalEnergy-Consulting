@@ -7,11 +7,11 @@ import { useRouter, usePathname } from '@/i18n/routing'
 const locales = [
   { code: 'it', label: 'IT', name: 'Italiano' },
   { code: 'en', label: 'EN', name: 'English' },
-  { code: 'bg', label: 'BG', name: 'Български' },
   { code: 'es', label: 'ES', name: 'Español' },
+  { code: 'bg', label: 'BG', name: 'Български' },
 ] as const
 
-export default function LanguageSelector({ dark = false }: { dark?: boolean }) {
+export default function LanguageSelector() {
   const locale = useLocale()
   const router = useRouter()
   const pathname = usePathname()
@@ -19,35 +19,56 @@ export default function LanguageSelector({ dark = false }: { dark?: boolean }) {
   const ref = useRef<HTMLDivElement>(null)
 
   useEffect(() => {
-    const fn = (e: MouseEvent) => { if (ref.current && !ref.current.contains(e.target as Node)) setOpen(false) }
-    document.addEventListener('mousedown', fn)
-    return () => document.removeEventListener('mousedown', fn)
+    const onDown = (e: MouseEvent) => {
+      if (ref.current && !ref.current.contains(e.target as Node)) setOpen(false)
+    }
+    const onKey = (e: KeyboardEvent) => { if (e.key === 'Escape') setOpen(false) }
+    document.addEventListener('mousedown', onDown)
+    document.addEventListener('keydown', onKey)
+    return () => {
+      document.removeEventListener('mousedown', onDown)
+      document.removeEventListener('keydown', onKey)
+    }
   }, [])
 
   return (
     <div ref={ref} className="relative">
-      <button onClick={() => setOpen(!open)}
-        className={`flex items-center gap-1 text-[11px] font-ui tracking-wider transition-colors ${
-          dark ? 'text-offwhite/40 hover:text-offwhite' : 'text-nero/40 hover:text-nero'
-        }`}>
-        {locales.find(l => l.code === locale)?.label}
-        <svg className={`w-2 h-2 transition-transform ${open ? 'rotate-180' : ''}`} fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+      <button
+        onClick={() => setOpen(!open)}
+        aria-haspopup="listbox"
+        aria-expanded={open}
+        aria-label="Language"
+        className="flex h-9 items-center gap-1.5 rounded-md border border-hair px-2.5 font-mono text-[11px] tracking-[0.08em] text-ink-2 transition-colors hover:border-hair-strong hover:text-ink"
+      >
+        {locales.find(l => l.code === locale)?.label ?? 'IT'}
+        <svg className={`h-2.5 w-2.5 transition-transform ${open ? 'rotate-180' : ''}`} fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M19 9l-7 7-7-7" />
         </svg>
       </button>
+
       {open && (
-        <div className="absolute top-full right-0 mt-3 bg-white border border-border overflow-hidden min-w-[130px] shadow-lg z-50">
+        <ul
+          role="listbox"
+          className="absolute right-0 top-full z-50 mt-2 min-w-[148px] overflow-hidden rounded-lg border border-hair bg-raised py-1 shadow-[var(--shadow)]"
+        >
           {locales.map(l => (
-            <button key={l.code}
-              onClick={() => { router.replace(pathname, { locale: l.code as any }); setOpen(false) }}
-              className={`w-full px-3 py-2 text-left text-[12px] flex items-center gap-2 transition-colors ${
-                locale === l.code ? 'text-sabbia-dark bg-sand-bg' : 'text-grigio hover:bg-sand-bg/50'
-              }`}>
-              <span className="font-ui text-[10px]">{l.label}</span>
-              <span>{l.name}</span>
-            </button>
+            <li key={l.code}>
+              <button
+                role="option"
+                aria-selected={locale === l.code}
+                onClick={() => { router.replace(pathname, { locale: l.code as any }); setOpen(false) }}
+                className={`flex w-full items-center gap-2.5 px-3 py-2 text-left text-[13px] transition-colors ${
+                  locale === l.code
+                    ? 'bg-[var(--brand-soft)] text-brand-ink'
+                    : 'text-ink-2 hover:bg-surface hover:text-ink'
+                }`}
+              >
+                <span className="font-mono text-[10px] tracking-[0.1em] opacity-70">{l.label}</span>
+                <span>{l.name}</span>
+              </button>
+            </li>
           ))}
-        </div>
+        </ul>
       )}
     </div>
   )

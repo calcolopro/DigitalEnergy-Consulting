@@ -26,19 +26,19 @@ export default function CookieBanner() {
   if (!visible) return null
 
   return (
-    <div className="fixed bottom-0 left-0 right-0 z-[100] bg-nero/95 backdrop-blur-md border-t border-white/10">
+    <div className="fixed inset-x-0 bottom-0 z-[100] border-t border-hair bg-paper/95 backdrop-blur-md">
       <div className="wrap py-4 flex flex-col sm:flex-row items-center justify-between gap-4">
-        <p className="text-offwhite/70 text-[13px] leading-relaxed">
+        <p className="body-sm max-w-[70ch]">
           {t('message')}{' '}
-          <Link href="/cookie-policy" className="text-sabbia hover:text-sabbia-dark underline underline-offset-2 transition-colors">
+          <Link href="/cookie-policy" className="text-brand-ink underline underline-offset-2 hover:text-ink transition-colors">
             {t('learnMore')}
           </Link>
         </p>
         <div className="flex gap-3 shrink-0">
-          <button onClick={decline} className="btn btn-outline text-[10px] py-2 px-4">
+          <button onClick={decline} className="btn btn-outline btn-sm">
             {t('decline')}
           </button>
-          <button onClick={accept} className="btn btn-sand text-[10px] py-2 px-4">
+          <button onClick={accept} className="btn btn-brand btn-sm">
             {t('accept')}
           </button>
         </div>

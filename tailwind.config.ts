@@ -1,6 +1,7 @@
 import type { Config } from 'tailwindcss'
 
 const config: Config = {
+  darkMode: 'class',
   content: [
     './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
     './src/components/**/*.{js,ts,jsx,tsx,mdx}',
@@ -9,19 +10,25 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        'nero': '#232323',
-        'sabbia': '#D4C4A8',
-        'sabbia-dark': '#B8A080',
-        'offwhite': '#FAFAF8',
-        'sand-bg': '#F0EBE3',
-        'grigio': '#666',
-        'grigio-light': '#888',
-        'border': '#E8E4DE',
+        paper: 'var(--paper)',
+        surface: 'var(--surface)',
+        raised: 'var(--raised)',
+        hair: 'var(--hair)',
+        'hair-strong': 'var(--hair-strong)',
+        ink: 'var(--ink)',
+        'ink-2': 'var(--ink-2)',
+        'ink-3': 'var(--ink-3)',
+        brand: 'var(--brand)',
+        'brand-ink': 'var(--brand-ink)',
+        gold: 'var(--gold)',
       },
       fontFamily: {
-        'serif': ['Cinzel', 'serif'],
-        'sans': ['DM Sans', 'sans-serif'],
-        'ui': ['Montserrat', 'sans-serif'],
+        display: ['Space Grotesk', 'Inter', 'sans-serif'],
+        sans: ['Inter', 'system-ui', 'sans-serif'],
+        mono: ['JetBrains Mono', 'ui-monospace', 'monospace'],
+      },
+      maxWidth: {
+        wrap: '1180px',
       },
     },
   },

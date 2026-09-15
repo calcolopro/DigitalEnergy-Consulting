@@ -25,11 +25,11 @@ export default function ContactPage() {
 
   return (
     <>
-      <section className="hero-sub">
-        <div className="wrap relative z-10">
+      <section className="page-head">
+        <div className="wrap">
           <AnimatedSection>
             <p className="label mb-3">{t('contact.label')}</p>
-            <h1 className="text-offwhite">{t('contact.pageTitle')}</h1>
+            <h1>{t('contact.pageTitle')}</h1>
           </AnimatedSection>
         </div>
       </section>
@@ -46,11 +46,11 @@ export default function ContactPage() {
                 </div>
                 <div>
                   <p className="label mb-2">{t('contact.response')}</p>
-                  <p className="body-sm" style={{ color: '#232323' }}>{t('contact.responseVal')}</p>
+                  <p className="body-sm text-ink">{t('contact.responseVal')}</p>
                 </div>
                 <div>
                   <p className="label mb-2">{t('contact.location')}</p>
-                  <p className="body-sm" style={{ color: '#232323' }}>{t('contact.locationVal')}</p>
+                  <p className="body-sm text-ink">{t('contact.locationVal')}</p>
                 </div>
               </div>
             </AnimatedSection>
@@ -58,11 +58,11 @@ export default function ContactPage() {
             <AnimatedSection delay={0.1}>
               {sent ? (
                 <div className="card text-center py-14">
-                  <p className="label text-sabbia-dark mb-3">&check;</p>
+                  <p className="label text-brand-ink mb-3">&check;</p>
                   <h3 className="mb-2">{t('contact.form.sent')}</h3>
                   <p className="body-sm mb-6">{t('contact.form.sentDesc')}</p>
                   <button onClick={() => { setSent(false); setForm({name:'',email:'',company:'',interest:'',message:''}) }}
-                    className="btn btn-ghost text-[11px]">{t('contact.form.another')}</button>
+                    className="btn btn-outline btn-sm">{t('contact.form.another')}</button>
                 </div>
               ) : (
                 <form onSubmit={handleSubmit} className="space-y-5">
@@ -96,7 +96,7 @@ export default function ContactPage() {
                     <textarea required rows={4} value={form.message} onChange={e => setForm({...form, message: e.target.value})}
                       className="form-input resize-none" placeholder={t('contact.form.messagePh')} />
                   </div>
-                  <button type="submit" disabled={sending} className="btn btn-dark w-full justify-center disabled:opacity-50">
+                  <button type="submit" disabled={sending} className="btn btn-brand w-full justify-center disabled:opacity-50">
                     {sending ? t('contact.form.sending') : t('contact.form.send')}
                   </button>
                 </form>

@@ -9,12 +9,12 @@ export default function PrivacyPage() {
   const t = useTranslations('privacy')
   return (
     <>
-      <section className="hero-sub">
-        <div className="wrap relative z-10">
+      <section className="page-head">
+        <div className="wrap">
           <AnimatedSection>
             <p className="label mb-3">LEGAL</p>
-            <h1 className="text-offwhite">{t('title')}</h1>
-            <p className="body-sm text-offwhite/40 mt-3">{t('lastUpdate')}: 2025-01-01</p>
+            <h1>{t('title')}</h1>
+            <p className="body-xs mt-3">{t('lastUpdate')}: 2025-01-01</p>
           </AnimatedSection>
         </div>
       </section>

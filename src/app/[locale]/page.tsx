@@ -3,48 +3,72 @@
 import { useTranslations } from 'next-intl'
 import { Link } from '@/i18n/routing'
 import AnimatedSection from '@/components/AnimatedSection'
+import ProjectLogos from '@/components/ProjectLogos'
 
 const whatKeys = ['ideation', 'development', 'launch', 'investment'] as const
-const projectKeys = ['oryx', 'ibizaamigo', 'scanix', 'calcolopro', 'hubde'] as const
 
 export default function HomePage() {
   const t = useTranslations()
 
   return (
     <>
-      {/* HERO */}
-      <section className="hero">
-        <div className="hero-inner">
+      {/* ===== HERO ===== */}
+      <section className="relative overflow-hidden pb-16 pt-32 md:pb-24 md:pt-44">
+        <div
+          aria-hidden="true"
+          className="pointer-events-none absolute -top-40 left-1/2 h-[520px] w-[820px] -translate-x-1/2 rounded-full opacity-[0.16] blur-[120px]"
+          style={{ background: 'radial-gradient(circle at 35% 50%, var(--gold), transparent 60%), radial-gradient(circle at 70% 50%, var(--brand), transparent 62%)' }}
+        />
+        <div className="wrap relative">
           <AnimatedSection>
-            <p className="label mb-6">{t('hero.label')}</p>
-            <div className="line mx-auto mb-8" />
-            <h1>{t('hero.title')}</h1>
-            <p className="body">{t('hero.desc')}</p>
-            <div className="flex flex-wrap justify-center gap-3">
-              <Link href="/portfolio" className="btn btn-sand">{t('hero.cta1')}</Link>
+            <p className="label mb-5">{t('hero.label')}</p>
+            <h1 className="display max-w-[16ch]">{t('hero.title')}</h1>
+            <div className="rule-brand mt-7" />
+            <p className="lead mt-7 max-w-[54ch]">{t('hero.desc')}</p>
+            <div className="mt-9 flex flex-wrap gap-3">
+              <Link href="/portfolio" className="btn btn-primary">{t('hero.cta1')}</Link>
               <Link href="/contatti" className="btn btn-outline">{t('hero.cta2')}</Link>
             </div>
           </AnimatedSection>
         </div>
       </section>
 
-      {/* ORYX BANNER */}
-      <section className="oryx-banner">
+      {/* ===== PROJECTS — logo wall ===== */}
+      <section className="sec-tight border-y border-hair bg-surface">
         <div className="wrap">
           <AnimatedSection>
-            <div className="flex flex-col md:flex-row items-center justify-between gap-6 py-1">
-              <div className="flex items-center gap-4">
-                <span className="inline-block w-2 h-2 rounded-full bg-green-400 animate-pulse" />
+            <div className="mb-8 flex flex-wrap items-end justify-between gap-4">
+              <div>
+                <p className="label mb-2">{t('projects.label')}</p>
+                <h2>{t('projects.title')}</h2>
+              </div>
+              <Link href="/portfolio" className="link">{t('about.more')} &rarr;</Link>
+            </div>
+            <ProjectLogos />
+          </AnimatedSection>
+        </div>
+      </section>
+
+      {/* ===== ORYX — live on the App Store ===== */}
+      <section className="sec-tight">
+        <div className="wrap">
+          <AnimatedSection>
+            <div className="card flex flex-col items-start justify-between gap-5 md:flex-row md:items-center">
+              <div className="flex items-start gap-4">
+                <span className="mt-2 inline-block h-2 w-2 shrink-0 animate-pulse rounded-full bg-brand" />
                 <div>
-                  <p className="label mb-1">{t('oryx_cta.label')}</p>
-                  <p className="text-offwhite font-serif text-lg md:text-xl">{t('oryx_cta.title')}</p>
+                  <p className="label label-brand mb-1.5">{t('oryx_cta.label')}</p>
+                  <p className="font-display text-lg font-semibold tracking-[-0.03em] text-ink md:text-xl">
+                    {t('oryx_cta.title')}
+                  </p>
+                  <p className="body-sm mt-1">{t('oryx_cta.desc')}</p>
                 </div>
               </div>
               <a
                 href="https://apps.apple.com/app/oryx/id6504382482"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="btn btn-sand text-[11px] py-2.5 px-6 whitespace-nowrap"
+                className="btn btn-brand shrink-0"
               >
                 {t('oryx_cta.button')} &#8599;
               </a>
@@ -53,178 +77,92 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* NEWS — IBIZA AMIGO LAUNCH */}
-      <section className="sec sec-sand">
+      {/* ===== WHAT WE DO ===== */}
+      <section className="sec pt-4">
+        <div className="wrap">
+          <div className="grid gap-10 md:grid-cols-12">
+            <div className="md:col-span-4">
+              <AnimatedSection>
+                <p className="label mb-3">{t('what.label')}</p>
+                <h2 className="mb-4">{t('what.title')}</h2>
+                <p className="body max-w-sm">{t('what.desc')}</p>
+              </AnimatedSection>
+            </div>
+
+            <div className="md:col-span-8">
+              <ul className="border-t border-hair">
+                {whatKeys.map((key, i) => (
+                  <li key={key}>
+                    <AnimatedSection delay={i * 0.06}>
+                      <div className="group grid gap-2 border-b border-hair py-6 sm:grid-cols-[auto_1fr] sm:gap-8">
+                        <span className="step-num pt-1">{String(i + 1).padStart(2, '0')}</span>
+                        <div>
+                          <h3 className="mb-1.5 transition-colors group-hover:text-brand-ink">
+                            {t(`what.items.${key}.title`)}
+                          </h3>
+                          <p className="body-sm max-w-[62ch]">{t(`what.items.${key}.desc`)}</p>
+                        </div>
+                      </div>
+                    </AnimatedSection>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ===== STATS ===== */}
+      <section className="sec-tight border-y border-hair bg-surface">
         <div className="wrap">
           <AnimatedSection>
-            <div className="grid md:grid-cols-2 gap-10 items-center">
-              <div>
-                <div className="flex items-center gap-3 mb-4">
-                  <p className="label">{t('news.label')}</p>
-                  <span className="text-[10px] font-ui font-semibold tracking-wider uppercase text-white bg-nero px-2.5 py-1">
-                    {t('news.badge')}
-                  </span>
-                </div>
-                <h2 className="mb-4">{t('news.title')}</h2>
-                <p className="body mb-6">{t('news.desc')}</p>
-                <Link href="/portfolio" className="link">{t('news.cta')} &rarr;</Link>
-              </div>
-              <div className="flex items-center justify-center">
-                <div className="text-center">
-                  <p className="stat-num mb-2">1<span>.</span>05</p>
-                  <p className="label">2026</p>
-                </div>
-              </div>
-            </div>
-          </AnimatedSection>
-        </div>
-      </section>
-
-      {/* WHAT WE DO */}
-      <section className="sec">
-        <div className="wrap">
-          <div className="text-center mb-14">
-            <AnimatedSection>
-              <p className="label mb-3">{t('what.label')}</p>
-              <h2 className="mb-4">{t('what.title')}</h2>
-              <p className="body max-w-xl mx-auto">{t('what.desc')}</p>
-            </AnimatedSection>
-          </div>
-
-          <div className="grid md:grid-cols-2 gap-4">
-            {whatKeys.map((key, i) => (
-              <AnimatedSection key={key} delay={i * 0.08}>
-                <div className="card group h-full">
-                  <div className="card-accent" />
-                  <h3 className="mb-2 group-hover:text-sabbia-dark transition-colors">{t(`what.items.${key}.title`)}</h3>
-                  <p className="body-sm">{t(`what.items.${key}.desc`)}</p>
-                </div>
-              </AnimatedSection>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <div className="divider wrap" />
-
-      {/* PROJECTS */}
-      <section className="sec">
-        <div className="wrap">
-          <div className="text-center mb-14">
-            <AnimatedSection>
-              <p className="label mb-3">{t('projects.label')}</p>
-              <h2 className="mb-4">{t('projects.title')}</h2>
-              <p className="body max-w-lg mx-auto">{t('projects.desc')}</p>
-            </AnimatedSection>
-          </div>
-
-          {/* Top row: 3 featured projects */}
-          <div className="grid md:grid-cols-3 gap-4 mb-4">
-            {projectKeys.slice(0, 3).map((key, i) => (
-              <AnimatedSection key={key} delay={i * 0.08}>
-                <div className="project group h-full">
-                  <div className="flex items-center justify-between mb-4">
-                    <p className="label">{t(`projects.${key}.label`)}</p>
-                    <span className={`text-[10px] font-ui font-semibold tracking-wider uppercase px-2 py-0.5 ${
-                      key === 'ibizaamigo'
-                        ? 'text-white bg-nero'
-                        : 'text-sabbia-dark bg-sand-bg'
-                    }`}>
-                      {t(`projects.${key}.status`)}
-                    </span>
-                  </div>
-                  <h3 className="mb-2 group-hover:text-sabbia-dark transition-colors">
-                    {t(`projects.${key}.title`)}
-                  </h3>
-                  <p className="body-sm">{t(`projects.${key}.desc`)}</p>
-                  <div className="mt-4 flex flex-wrap">
-                    {(t.raw(`projects.${key}.tags`) as string[]).map((tag: string, j: number) => (
-                      <span key={j} className="project-tag">{tag}</span>
-                    ))}
-                  </div>
-                </div>
-              </AnimatedSection>
-            ))}
-          </div>
-
-          {/* Bottom row: 2 projects */}
-          <div className="grid md:grid-cols-2 gap-4">
-            {projectKeys.slice(3).map((key, i) => (
-              <AnimatedSection key={key} delay={(i + 3) * 0.08}>
-                <div className="project group h-full">
-                  <div className="flex items-center justify-between mb-4">
-                    <p className="label">{t(`projects.${key}.label`)}</p>
-                    <span className="text-[10px] font-ui font-semibold tracking-wider uppercase text-sabbia-dark bg-sand-bg px-2 py-0.5">
-                      {t(`projects.${key}.status`)}
-                    </span>
-                  </div>
-                  <h3 className="mb-2 group-hover:text-sabbia-dark transition-colors">
-                    {t(`projects.${key}.title`)}
-                  </h3>
-                  <p className="body-sm">{t(`projects.${key}.desc`)}</p>
-                  <div className="mt-4 flex flex-wrap">
-                    {(t.raw(`projects.${key}.tags`) as string[]).map((tag: string, j: number) => (
-                      <span key={j} className="project-tag">{tag}</span>
-                    ))}
-                  </div>
-                </div>
-              </AnimatedSection>
-            ))}
-          </div>
-
-          <AnimatedSection delay={0.3}>
-            <div className="text-center mt-10">
-              <Link href="/portfolio" className="btn btn-ghost">{t('about.more')} &rarr;</Link>
-            </div>
-          </AnimatedSection>
-        </div>
-      </section>
-
-      {/* STATS */}
-      <section className="sec sec-dark">
-        <div className="wrap">
-          <AnimatedSection>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+            <dl className="grid grid-cols-2 gap-8 md:grid-cols-4">
               {[
                 { v: '8', s: '', l: t('stats.products') },
                 { v: '8', s: '+', l: t('stats.countries') },
                 { v: '99.9', s: '%', l: t('stats.uptime') },
                 { v: '2023', s: '', l: t('stats.year') },
-              ].map((st, i) => (
-                <div key={i}>
-                  <p className="stat-num">{st.v}<span>{st.s}</span></p>
-                  <p className="body-sm mt-2">{st.l}</p>
+              ].map(st => (
+                <div key={st.l}>
+                  <dt className="stat-num">{st.v}<span>{st.s}</span></dt>
+                  <dd className="label mt-2.5">{st.l}</dd>
                 </div>
               ))}
-            </div>
+            </dl>
           </AnimatedSection>
         </div>
       </section>
 
-      {/* ABOUT PREVIEW */}
-      <section className="sec sec-sand">
+      {/* ===== ABOUT ===== */}
+      <section className="sec">
         <div className="wrap">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
-            <AnimatedSection>
-              <p className="label mb-3">{t('about.label')}</p>
-              <h2 className="mb-4">{t('about.title')}</h2>
-            </AnimatedSection>
-            <AnimatedSection delay={0.1}>
-              <p className="body mb-4">{t('about.desc1')}</p>
-              <p className="body-sm mb-6">{t('about.desc2')}</p>
-              <Link href="/about" className="link">{t('about.more')} &rarr;</Link>
-            </AnimatedSection>
+          <div className="grid gap-10 md:grid-cols-12">
+            <div className="md:col-span-5">
+              <AnimatedSection>
+                <p className="label mb-3">{t('about.label')}</p>
+                <h2>{t('about.title')}</h2>
+              </AnimatedSection>
+            </div>
+            <div className="md:col-span-7">
+              <AnimatedSection delay={0.08}>
+                <p className="lead mb-5">{t('about.desc1')}</p>
+                <p className="body mb-7 max-w-[64ch]">{t('about.desc2')}</p>
+                <Link href="/about" className="link">{t('about.more')} &rarr;</Link>
+              </AnimatedSection>
+            </div>
           </div>
         </div>
       </section>
 
-      {/* CTA */}
-      <section className="sec">
-        <div className="wrap text-center">
+      {/* ===== CTA ===== */}
+      <section className="pb-20 md:pb-28">
+        <div className="wrap">
           <AnimatedSection>
-            <h2 className="mb-4">{t('cta.title')}</h2>
-            <p className="body max-w-md mx-auto mb-8">{t('cta.desc')}</p>
-            <Link href="/contatti" className="btn btn-dark">{t('cta.button')} &rarr;</Link>
+            <div className="rounded-xl border border-hair bg-surface px-6 py-12 text-center md:px-12 md:py-16">
+              <h2 className="mx-auto max-w-[20ch]">{t('cta.title')}</h2>
+              <p className="body mx-auto mt-4 max-w-[52ch]">{t('cta.desc')}</p>
+              <Link href="/contatti" className="btn btn-brand mt-8">{t('cta.button')} &rarr;</Link>
+            </div>
           </AnimatedSection>
         </div>
       </section>

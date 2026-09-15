@@ -5,6 +5,7 @@ import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import CookieBanner from '@/components/CookieBanner'
 import GoogleAnalytics from '@/components/GoogleAnalytics'
+import { themeInitScript } from '@/lib/theme'
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }))
@@ -78,7 +79,12 @@ export default async function LocaleLayout({
   }
 
   return (
-    <html lang={locale}>
+    <html lang={locale} suppressHydrationWarning>
+      <head>
+        <script dangerouslySetInnerHTML={{ __html: themeInitScript }} />
+        <meta name="theme-color" content="#FFFFFF" media="(prefers-color-scheme: light)" />
+        <meta name="theme-color" content="#0B0E0D" media="(prefers-color-scheme: dark)" />
+      </head>
       <body>
         <script
           type="application/ld+json"
@@ -86,7 +92,7 @@ export default async function LocaleLayout({
         />
         <NextIntlClientProvider messages={messages}>
           <Header />
-          <main>{children}</main>
+          <main id="main">{children}</main>
           <Footer />
           <CookieBanner />
           <GoogleAnalytics />

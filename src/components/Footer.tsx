@@ -3,42 +3,67 @@
 import { useTranslations } from 'next-intl'
 import { Link } from '@/i18n/routing'
 import Image from 'next/image'
+import { PROJECTS } from './ProjectLogos'
 
 export default function Footer() {
   const t = useTranslations('footer')
   const nav = useTranslations('nav')
 
   return (
-    <footer className="sec-dark">
-      <div className="wrap pt-20 pb-12">
-        <div className="grid md:grid-cols-4 gap-10 mb-16">
-          <div className="md:col-span-2">
-            <Image src="/logo-de-colored.png" alt="Digital Energy" width={300} height={300} className="h-14 w-auto mb-8 brightness-0 invert opacity-80" />
+    <footer className="border-t border-hair bg-surface">
+      <div className="wrap py-14 md:py-20">
+        <div className="grid gap-10 md:grid-cols-12">
+          <div className="md:col-span-4">
+            <div className="mb-5 flex items-center gap-2.5">
+              <Image src="/logo-de-colored.png" alt="" width={200} height={200} className="h-8 w-8 object-contain" />
+              <span className="font-display text-[15px] font-semibold tracking-[-0.03em] text-ink">
+                Digital Energy
+              </span>
+            </div>
             <p className="body-sm max-w-xs">{t('desc')}</p>
+            <div className="rule-brand mt-6" />
           </div>
-          <div className="pt-6">
+
+          <div className="md:col-span-2">
             <p className="label mb-4">{t('nav')}</p>
-            <ul className="space-y-2">
-              <li><Link href="/" className="body-sm hover:text-sabbia transition-colors">{nav('home')}</Link></li>
-              <li><Link href="/portfolio" className="body-sm hover:text-sabbia transition-colors">{nav('portfolio')}</Link></li>
-              <li><Link href="/about" className="body-sm hover:text-sabbia transition-colors">{nav('about')}</Link></li>
-              <li><Link href="/contatti" className="body-sm hover:text-sabbia transition-colors">{nav('contact')}</Link></li>
+            <ul className="space-y-2.5">
+              {([['/', 'home'], ['/portfolio', 'portfolio'], ['/about', 'about'], ['/contatti', 'contact']] as const).map(([href, key]) => (
+                <li key={href}>
+                  <Link href={href} className="link-nav">{nav(key)}</Link>
+                </li>
+              ))}
             </ul>
           </div>
-          <div className="pt-6">
-            <p className="label mb-4">{t('connect')}</p>
-            <ul className="space-y-2">
-              <li><a href="mailto:info@digitalenergy.solutions" className="body-sm hover:text-sabbia transition-colors">{t('email')}</a></li>
+
+          <div className="md:col-span-3">
+            <p className="label mb-4">{nav('portfolio')}</p>
+            <ul className="space-y-2.5">
+              {PROJECTS.map(p => (
+                <li key={p.name}>
+                  <a href={p.href} target="_blank" rel="noopener noreferrer" className="link-nav">
+                    {p.name}
+                  </a>
+                </li>
+              ))}
             </ul>
+          </div>
+
+          <div className="md:col-span-3">
+            <p className="label mb-4">{t('connect')}</p>
+            <a href="mailto:info@digitalenergy.solutions" className="link-nav block text-[13px] [overflow-wrap:anywhere]">
+              info@digitalenergy.solutions
+            </a>
           </div>
         </div>
-        <div className="divider-dark mb-8" />
-        <div className="flex flex-col md:flex-row justify-between items-center gap-3 pb-4">
-          <p className="body-sm text-[11px] opacity-40">&copy; 2023 Digital Energy Ltd. {t('rights')}</p>
-          <div className="flex gap-4">
-            <Link href="/privacy" className="body-sm text-[11px] opacity-40 hover:opacity-70 transition-opacity">{t('privacy')}</Link>
-            <Link href="/cookie-policy" className="body-sm text-[11px] opacity-40 hover:opacity-70 transition-opacity">Cookie</Link>
-            <Link href="/termini" className="body-sm text-[11px] opacity-40 hover:opacity-70 transition-opacity">{t('terms')}</Link>
+
+        <hr className="hair my-10" />
+
+        <div className="flex flex-col items-start justify-between gap-4 md:flex-row md:items-center">
+          <p className="body-xs">&copy; {new Date().getFullYear()} Digital Energy Ltd. {t('rights')}</p>
+          <div className="flex flex-wrap gap-5">
+            <Link href="/privacy" className="body-xs hover:text-ink">{t('privacy')}</Link>
+            <Link href="/cookie-policy" className="body-xs hover:text-ink">Cookie</Link>
+            <Link href="/termini" className="body-xs hover:text-ink">{t('terms')}</Link>
           </div>
         </div>
       </div>
