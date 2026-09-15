@@ -35,6 +35,32 @@
       }
     }
   },
+  "agents": {
+    "label": "Agenti AI",
+    "title": "Agenti AI gia' in produzione",
+    "desc": "Costruiamo agenti che fanno un lavoro preciso dentro un'azienda: rispondere ai clienti, sorvegliare un processo, leggere documenti. Li mettiamo prima sui nostri prodotti, con traffico vero, e solo dopo li proponiamo ad altri.",
+    "items": {
+      "a1": {
+        "title": "Rispondono ai clienti, a qualsiasi ora",
+        "desc": "Un agente risponde su WhatsApp o sul sito anche di notte, nella lingua del cliente, e passa la conversazione a una persona solo quando serve davvero."
+      },
+      "a2": {
+        "title": "Tengono d'occhio il processo",
+        "desc": "Controllano da soli che ogni ordine, prenotazione o consegna sia coperta. Se qualcosa resta scoperto, avvisano la persona giusta su Telegram, non la mattina dopo."
+      },
+      "a3": {
+        "title": "Leggono i documenti al posto tuo",
+        "desc": "Fatture, contratti, preventivi: l'agente li apre, tira fuori i dati che servono e li scrive dove devono stare. Niente piu' ricopiatura a mano."
+      },
+      "a4": {
+        "title": "Lavorano dentro il software che hai gia'",
+        "desc": "Si collegano al gestionale, al CRM o alla piattaforma che usate ogni giorno e si prendono la parte ripetitiva, quella che nessuno vuole fare."
+      }
+    },
+    "proofLabel": "In produzione",
+    "proof": "Ibiza Amigo e' il nostro agente su WhatsApp: ogni giorno parla con turisti veri a Ibiza, consiglia locali e barche e passa le prenotazioni ai partner. Non e' una demo.",
+    "cta": "Parliamo del tuo caso"
+  },
   "projects": {
     "label": "I Nostri Progetti",
     "title": "Portfolio",
@@ -44,35 +70,63 @@
       "title": "ORYX",
       "desc": "Piattaforma di mobilita' privata di lusso, ora disponibile su App Store iOS. Prenota shuttle, chauffeur, sicurezza e yacht charter a Ibiza, Mykonos, Dubai e Monaco — tutto in un'unica app.",
       "status": "Live",
-      "tags": ["Mobilita'", "Luxury", "Marketplace", "App iOS", "App Store"]
+      "tags": [
+        "Mobilita'",
+        "Luxury",
+        "Marketplace",
+        "App iOS",
+        "App Store"
+      ]
     },
     "ibizaamigo": {
       "label": "Concierge Digitale",
       "title": "Ibiza Amigo",
       "desc": "Il tuo concierge personale AI per Ibiza via WhatsApp. Ristoranti, club, yacht, transfer e servizi VIP — consigliati e prenotati in tempo reale dalla nostra intelligenza artificiale.",
       "status": "Lancio 1 Maggio",
-      "tags": ["AI", "WhatsApp", "Concierge", "Ibiza", "Travel"]
+      "tags": [
+        "AI",
+        "WhatsApp",
+        "Concierge",
+        "Ibiza",
+        "Travel"
+      ]
     },
     "scanix": {
       "label": "AI Invoice Management",
       "title": "Scanix",
       "desc": "Piattaforma AI per la scansione e gestione delle fatture. Fotografa una fattura, l'AI la legge e il tuo commercialista riceve un report pronto. OCR intelligente, categorizzazione automatica e condivisione con un click.",
       "status": "Live",
-      "tags": ["AI", "OCR", "Fintech", "SaaS", "Fatturazione"]
+      "tags": [
+        "AI",
+        "OCR",
+        "Fintech",
+        "SaaS",
+        "Fatturazione"
+      ]
     },
     "calcolopro": {
       "label": "SaaS Platform",
       "title": "CalcoloPro+",
       "desc": "Piattaforma professionale di portfolio management con estrazione dati OCR automatizzata, dashboard analytics in tempo reale e integrazione Telegram bot.",
       "status": "Live",
-      "tags": ["SaaS", "Analytics", "OCR", "Fintech"]
+      "tags": [
+        "SaaS",
+        "Analytics",
+        "OCR",
+        "Fintech"
+      ]
     },
     "hubde": {
       "label": "Software Studio",
       "title": "Hub Digital Energy",
       "desc": "Il nostro studio di sviluppo software. Specializzato in piattaforme SaaS, automazione, dashboard analytics, integrazioni AI e consulenza digitale.",
       "status": "Attivo",
-      "tags": ["Sviluppo", "SaaS", "AI", "Automazione"]
+      "tags": [
+        "Sviluppo",
+        "SaaS",
+        "AI",
+        "Automazione"
+      ]
     }
   },
   "stats": {
@@ -92,19 +146,47 @@
     "values": {
       "label": "I Nostri Principi",
       "title": "Come Lavoriamo",
-      "ownership": { "title": "Ownership", "desc": "Costruiamo prodotti nostri. Ci crediamo, li usiamo, li facciamo crescere." },
-      "excellence": { "title": "Eccellenza", "desc": "Standard altissimi in design, tecnologia e user experience." },
-      "speed": { "title": "Velocita'", "desc": "Dal concept al mercato in tempi rapidi, senza compromettere la qualita'." },
-      "global": { "title": "Visione Globale", "desc": "Pensiamo e operiamo a livello internazionale fin dal primo giorno." }
+      "ownership": {
+        "title": "Ownership",
+        "desc": "Costruiamo prodotti nostri. Ci crediamo, li usiamo, li facciamo crescere."
+      },
+      "excellence": {
+        "title": "Eccellenza",
+        "desc": "Standard altissimi in design, tecnologia e user experience."
+      },
+      "speed": {
+        "title": "Velocita'",
+        "desc": "Dal concept al mercato in tempi rapidi, senza compromettere la qualita'."
+      },
+      "global": {
+        "title": "Visione Globale",
+        "desc": "Pensiamo e operiamo a livello internazionale fin dal primo giorno."
+      }
     },
     "process": {
       "label": "Il Nostro Processo",
       "title": "Dal Concept al Mercato",
       "steps": {
-        "s1": { "num": "01", "title": "Discovery", "desc": "Analisi di mercato, identificazione opportunita', validazione del concept." },
-        "s2": { "num": "02", "title": "Build", "desc": "Design, sviluppo e testing della piattaforma attraverso Hub DE." },
-        "s3": { "num": "03", "title": "Launch", "desc": "Go-to-market, acquisizione utenti, iterazione basata sui dati." },
-        "s4": { "num": "04", "title": "Scale", "desc": "Ottimizzazione, espansione in nuovi mercati, crescita sostenibile." }
+        "s1": {
+          "num": "01",
+          "title": "Discovery",
+          "desc": "Analisi di mercato, identificazione opportunita', validazione del concept."
+        },
+        "s2": {
+          "num": "02",
+          "title": "Build",
+          "desc": "Design, sviluppo e testing della piattaforma attraverso Hub DE."
+        },
+        "s3": {
+          "num": "03",
+          "title": "Launch",
+          "desc": "Go-to-market, acquisizione utenti, iterazione basata sui dati."
+        },
+        "s4": {
+          "num": "04",
+          "title": "Scale",
+          "desc": "Ottimizzazione, espansione in nuovi mercati, crescita sostenibile."
+        }
       }
     }
   },
@@ -179,33 +261,78 @@
     "title": "Cookie Policy",
     "lastUpdate": "Ultimo aggiornamento",
     "sections": {
-      "what": { "title": "Cosa sono i Cookie", "content": "I cookie sono piccoli file di testo che i siti web salvano sul tuo dispositivo durante la navigazione. Servono a rendere il sito funzionante e a migliorare l'esperienza utente." },
-      "types": { "title": "Tipi di Cookie Utilizzati", "content": "Cookie tecnici: necessari per il funzionamento del sito (sessione, preferenze lingua). Non richiedono consenso. Cookie analitici: Google Analytics, utilizzati per analizzare il traffico in forma anonima. Attivati solo con il tuo consenso." },
-      "thirdParty": { "title": "Cookie di Terze Parti", "content": "Il sito potrebbe utilizzare servizi di terze parti (Google Analytics) che installano propri cookie. Questi servizi hanno proprie informative sulla privacy." },
-      "manage": { "title": "Gestione dei Cookie", "content": "Puoi gestire le preferenze cookie in qualsiasi momento dalle impostazioni del tuo browser. La disattivazione di alcuni cookie potrebbe influire sulla funzionalita' del sito." },
-      "contact": { "title": "Contatti", "content": "Per domande sulla cookie policy: info@digitalenergy.solutions." }
+      "what": {
+        "title": "Cosa sono i Cookie",
+        "content": "I cookie sono piccoli file di testo che i siti web salvano sul tuo dispositivo durante la navigazione. Servono a rendere il sito funzionante e a migliorare l'esperienza utente."
+      },
+      "types": {
+        "title": "Tipi di Cookie Utilizzati",
+        "content": "Cookie tecnici: necessari per il funzionamento del sito (sessione, preferenze lingua). Non richiedono consenso. Cookie analitici: Google Analytics, utilizzati per analizzare il traffico in forma anonima. Attivati solo con il tuo consenso."
+      },
+      "thirdParty": {
+        "title": "Cookie di Terze Parti",
+        "content": "Il sito potrebbe utilizzare servizi di terze parti (Google Analytics) che installano propri cookie. Questi servizi hanno proprie informative sulla privacy."
+      },
+      "manage": {
+        "title": "Gestione dei Cookie",
+        "content": "Puoi gestire le preferenze cookie in qualsiasi momento dalle impostazioni del tuo browser. La disattivazione di alcuni cookie potrebbe influire sulla funzionalita' del sito."
+      },
+      "contact": {
+        "title": "Contatti",
+        "content": "Per domande sulla cookie policy: info@digitalenergy.solutions."
+      }
     }
   },
   "privacy": {
     "title": "Privacy Policy",
     "lastUpdate": "Ultimo aggiornamento",
     "sections": {
-      "intro": { "title": "Introduzione", "content": "Digital Energy Ltd. si impegna a proteggere la tua privacy. Questa informativa descrive come raccogliamo e utilizziamo i tuoi dati personali." },
-      "data": { "title": "Dati Raccolti", "content": "Raccogliamo solo i dati forniti volontariamente attraverso il form di contatto: nome, email, azienda e messaggio." },
-      "purpose": { "title": "Finalita'", "content": "Utilizziamo i tuoi dati esclusivamente per rispondere alle tue richieste." },
-      "retention": { "title": "Conservazione", "content": "I dati vengono conservati solo per il tempo necessario a gestire la tua richiesta." },
-      "rights": { "title": "I Tuoi Diritti", "content": "Puoi richiedere accesso, rettifica o cancellazione dei tuoi dati contattandoci a info@digitalenergy.solutions." },
-      "contact": { "title": "Contatti", "content": "Per domande sulla privacy: info@digitalenergy.solutions." }
+      "intro": {
+        "title": "Introduzione",
+        "content": "Digital Energy Ltd. si impegna a proteggere la tua privacy. Questa informativa descrive come raccogliamo e utilizziamo i tuoi dati personali."
+      },
+      "data": {
+        "title": "Dati Raccolti",
+        "content": "Raccogliamo solo i dati forniti volontariamente attraverso il form di contatto: nome, email, azienda e messaggio."
+      },
+      "purpose": {
+        "title": "Finalita'",
+        "content": "Utilizziamo i tuoi dati esclusivamente per rispondere alle tue richieste."
+      },
+      "retention": {
+        "title": "Conservazione",
+        "content": "I dati vengono conservati solo per il tempo necessario a gestire la tua richiesta."
+      },
+      "rights": {
+        "title": "I Tuoi Diritti",
+        "content": "Puoi richiedere accesso, rettifica o cancellazione dei tuoi dati contattandoci a info@digitalenergy.solutions."
+      },
+      "contact": {
+        "title": "Contatti",
+        "content": "Per domande sulla privacy: info@digitalenergy.solutions."
+      }
     }
   },
   "terms": {
     "title": "Termini di Servizio",
     "lastUpdate": "Ultimo aggiornamento",
     "sections": {
-      "general": { "title": "Informazioni Generali", "content": "Questo sito e' gestito da Digital Energy Ltd. Utilizzando questo sito, accetti i presenti termini." },
-      "ip": { "title": "Proprieta' Intellettuale", "content": "Tutti i contenuti di questo sito sono di proprieta' di Digital Energy Ltd. e protetti dalle leggi sul copyright." },
-      "liability": { "title": "Responsabilita'", "content": "Le informazioni fornite sono a scopo informativo. Digital Energy non garantisce l'accuratezza delle informazioni." },
-      "contact": { "title": "Contatti", "content": "Per domande: info@digitalenergy.solutions." }
+      "general": {
+        "title": "Informazioni Generali",
+        "content": "Questo sito e' gestito da Digital Energy Ltd. Utilizzando questo sito, accetti i presenti termini."
+      },
+      "ip": {
+        "title": "Proprieta' Intellettuale",
+        "content": "Tutti i contenuti di questo sito sono di proprieta' di Digital Energy Ltd. e protetti dalle leggi sul copyright."
+      },
+      "liability": {
+        "title": "Responsabilita'",
+        "content": "Le informazioni fornite sono a scopo informativo. Digital Energy non garantisce l'accuratezza delle informazioni."
+      },
+      "contact": {
+        "title": "Contatti",
+        "content": "Per domande: info@digitalenergy.solutions."
+      }
     }
   }
 }

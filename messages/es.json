@@ -1,5 +1,10 @@
 {
-  "nav": { "home": "Inicio", "portfolio": "Portfolio", "about": "Nosotros", "contact": "Contacto" },
+  "nav": {
+    "home": "Inicio",
+    "portfolio": "Portfolio",
+    "about": "Nosotros",
+    "contact": "Contacto"
+  },
   "hero": {
     "label": "Digital Energy",
     "title": "Creamos productos digitales que transforman mercados",
@@ -12,23 +17,124 @@
     "title": "No somos una consultora tradicional",
     "desc": "Digital Energy identifica oportunidades de mercado, crea productos digitales y los lleva al exito. Cada proyecto nace de nuestra vision y se desarrolla internamente a traves de Hub DE.",
     "items": {
-      "ideation": { "title": "Ideacion y Estrategia", "desc": "Identificamos brechas de mercado y desarrollamos conceptos de producto con modelos de negocio validados." },
-      "development": { "title": "Desarrollo y Tecnologia", "desc": "A traves de Hub DE construimos plataformas SaaS, apps y soluciones AI con tecnologias de vanguardia." },
-      "launch": { "title": "Lanzamiento y Crecimiento", "desc": "Llevamos productos al mercado con estrategias go-to-market, marketing digital y optimizacion continua." },
-      "investment": { "title": "Inversiones y Advisory", "desc": "Asesoria estrategica para inversiones inmobiliarias, financiacion de proyectos y partnerships internacionales." }
+      "ideation": {
+        "title": "Ideacion y Estrategia",
+        "desc": "Identificamos brechas de mercado y desarrollamos conceptos de producto con modelos de negocio validados."
+      },
+      "development": {
+        "title": "Desarrollo y Tecnologia",
+        "desc": "A traves de Hub DE construimos plataformas SaaS, apps y soluciones AI con tecnologias de vanguardia."
+      },
+      "launch": {
+        "title": "Lanzamiento y Crecimiento",
+        "desc": "Llevamos productos al mercado con estrategias go-to-market, marketing digital y optimizacion continua."
+      },
+      "investment": {
+        "title": "Inversiones y Advisory",
+        "desc": "Asesoria estrategica para inversiones inmobiliarias, financiacion de proyectos y partnerships internacionales."
+      }
     }
+  },
+  "agents": {
+    "label": "Agentes IA",
+    "title": "Agentes IA ya en produccion",
+    "desc": "Construimos agentes que hacen un trabajo concreto dentro de una empresa: responder a clientes, vigilar un proceso, leer documentos. Primero los ponemos en nuestros propios productos, con trafico real, y solo despues se los proponemos a otros.",
+    "items": {
+      "a1": {
+        "title": "Responden a los clientes a cualquier hora",
+        "desc": "Un agente contesta por WhatsApp o en la web tambien de noche, en el idioma del cliente, y pasa la conversacion a una persona solo cuando hace falta de verdad."
+      },
+      "a2": {
+        "title": "Vigilan el proceso",
+        "desc": "Comprueban solos que cada pedido, reserva o entrega este cubierto. Si algo se queda sin asignar, avisan a la persona adecuada por Telegram, no a la manana siguiente."
+      },
+      "a3": {
+        "title": "Leen los documentos por ti",
+        "desc": "Facturas, contratos, presupuestos: el agente los abre, saca los datos que importan y los escribe donde deben estar. Se acabo copiar a mano."
+      },
+      "a4": {
+        "title": "Trabajan dentro del software que ya tienes",
+        "desc": "Se conectan a tu gestion, a tu CRM o a la plataforma que usa tu equipo cada dia y se encargan de la parte repetitiva que nadie quiere hacer."
+      }
+    },
+    "proofLabel": "En produccion",
+    "proof": "Ibiza Amigo es nuestro agente en WhatsApp: cada dia habla con turistas reales en Ibiza, recomienda locales y barcos y pasa las reservas a los partners. No es una demo.",
+    "cta": "Hablemos de tu caso"
   },
   "projects": {
     "label": "Nuestros Proyectos",
     "title": "Portfolio",
     "desc": "Productos digitales creados, desarrollados y gestionados por Digital Energy — del concepto al mercado internacional.",
-    "oryx": { "label": "Movilidad Premium", "title": "ORYX", "desc": "Plataforma de movilidad privada de lujo, ahora disponible en iOS App Store. Reserva shuttles, chofer, seguridad y yacht charter en Ibiza, Mykonos, Dubai y Monaco — todo en una app.", "status": "Live", "tags": ["Movilidad", "Lujo", "Marketplace", "App iOS", "App Store"] },
-    "ibizaamigo": { "label": "Concierge Digital", "title": "Ibiza Amigo", "desc": "Tu concierge personal AI para Ibiza via WhatsApp. Restaurantes, clubs, yates, transfers y servicios VIP — recomendados y reservados en tiempo real por nuestra inteligencia artificial.", "status": "Lanzamiento 1 Mayo", "tags": ["AI", "WhatsApp", "Concierge", "Ibiza", "Viajes"] },
-    "scanix": { "label": "Gestion de Facturas AI", "title": "Scanix", "desc": "Plataforma AI para escaneo y gestion de facturas. Fotografa una factura, la AI la lee y tu contador recibe un reporte listo. OCR inteligente, categorizacion automatica y compartir con un clic.", "status": "Live", "tags": ["AI", "OCR", "Fintech", "SaaS", "Facturacion"] },
-    "calcolopro": { "label": "Plataforma SaaS", "title": "CalcoloPro+", "desc": "Plataforma profesional de gestion de portfolio con extraccion OCR automatizada, dashboard analytics en tiempo real e integracion con Telegram bot.", "status": "Activo", "tags": ["SaaS", "Analytics", "OCR", "Fintech"] },
-    "hubde": { "label": "Estudio de Software", "title": "Hub Digital Energy", "desc": "Nuestro estudio de desarrollo de software. Especializado en plataformas SaaS, automatizacion, dashboards, integraciones AI y consultoria digital.", "status": "Activo", "tags": ["Desarrollo", "SaaS", "AI", "Automatizacion"] }
+    "oryx": {
+      "label": "Movilidad Premium",
+      "title": "ORYX",
+      "desc": "Plataforma de movilidad privada de lujo, ahora disponible en iOS App Store. Reserva shuttles, chofer, seguridad y yacht charter en Ibiza, Mykonos, Dubai y Monaco — todo en una app.",
+      "status": "Live",
+      "tags": [
+        "Movilidad",
+        "Lujo",
+        "Marketplace",
+        "App iOS",
+        "App Store"
+      ]
+    },
+    "ibizaamigo": {
+      "label": "Concierge Digital",
+      "title": "Ibiza Amigo",
+      "desc": "Tu concierge personal AI para Ibiza via WhatsApp. Restaurantes, clubs, yates, transfers y servicios VIP — recomendados y reservados en tiempo real por nuestra inteligencia artificial.",
+      "status": "Lanzamiento 1 Mayo",
+      "tags": [
+        "AI",
+        "WhatsApp",
+        "Concierge",
+        "Ibiza",
+        "Viajes"
+      ]
+    },
+    "scanix": {
+      "label": "Gestion de Facturas AI",
+      "title": "Scanix",
+      "desc": "Plataforma AI para escaneo y gestion de facturas. Fotografa una factura, la AI la lee y tu contador recibe un reporte listo. OCR inteligente, categorizacion automatica y compartir con un clic.",
+      "status": "Live",
+      "tags": [
+        "AI",
+        "OCR",
+        "Fintech",
+        "SaaS",
+        "Facturacion"
+      ]
+    },
+    "calcolopro": {
+      "label": "Plataforma SaaS",
+      "title": "CalcoloPro+",
+      "desc": "Plataforma profesional de gestion de portfolio con extraccion OCR automatizada, dashboard analytics en tiempo real e integracion con Telegram bot.",
+      "status": "Activo",
+      "tags": [
+        "SaaS",
+        "Analytics",
+        "OCR",
+        "Fintech"
+      ]
+    },
+    "hubde": {
+      "label": "Estudio de Software",
+      "title": "Hub Digital Energy",
+      "desc": "Nuestro estudio de desarrollo de software. Especializado en plataformas SaaS, automatizacion, dashboards, integraciones AI y consultoria digital.",
+      "status": "Activo",
+      "tags": [
+        "Desarrollo",
+        "SaaS",
+        "AI",
+        "Automatizacion"
+      ]
+    }
   },
-  "stats": { "products": "Productos", "countries": "Paises", "uptime": "Uptime", "year": "Fundacion" },
+  "stats": {
+    "products": "Productos",
+    "countries": "Paises",
+    "uptime": "Uptime",
+    "year": "Fundacion"
+  },
   "about": {
     "label": "Nosotros",
     "title": "Un grupo que construye, no solo aconseja",
@@ -37,8 +143,52 @@
     "desc3": "Cada proyecto nace de nuestra vision, lo desarrolla nuestro equipo y crece con nuestro apoyo continuo.",
     "more": "Descubre mas",
     "pageTitle": "Nosotros",
-    "values": { "label": "Nuestros Principios", "title": "Como Trabajamos", "ownership": { "title": "Ownership", "desc": "Construimos nuestros propios productos. Creemos en ellos, los usamos, los hacemos crecer." }, "excellence": { "title": "Excelencia", "desc": "Los mas altos estandares en diseno, tecnologia y experiencia de usuario." }, "speed": { "title": "Velocidad", "desc": "Del concepto al mercado rapidamente, sin comprometer la calidad." }, "global": { "title": "Vision Global", "desc": "Pensamos y operamos internacionalmente desde el primer dia." } },
-    "process": { "label": "Nuestro Proceso", "title": "Del Concepto al Mercado", "steps": { "s1": { "num": "01", "title": "Discovery", "desc": "Analisis de mercado, identificacion de oportunidades, validacion del concepto." }, "s2": { "num": "02", "title": "Build", "desc": "Diseno, desarrollo y testing de la plataforma a traves de Hub DE." }, "s3": { "num": "03", "title": "Launch", "desc": "Go-to-market, adquisicion de usuarios, iteracion basada en datos." }, "s4": { "num": "04", "title": "Scale", "desc": "Optimizacion, expansion a nuevos mercados, crecimiento sostenible." } } }
+    "values": {
+      "label": "Nuestros Principios",
+      "title": "Como Trabajamos",
+      "ownership": {
+        "title": "Ownership",
+        "desc": "Construimos nuestros propios productos. Creemos en ellos, los usamos, los hacemos crecer."
+      },
+      "excellence": {
+        "title": "Excelencia",
+        "desc": "Los mas altos estandares en diseno, tecnologia y experiencia de usuario."
+      },
+      "speed": {
+        "title": "Velocidad",
+        "desc": "Del concepto al mercado rapidamente, sin comprometer la calidad."
+      },
+      "global": {
+        "title": "Vision Global",
+        "desc": "Pensamos y operamos internacionalmente desde el primer dia."
+      }
+    },
+    "process": {
+      "label": "Nuestro Proceso",
+      "title": "Del Concepto al Mercado",
+      "steps": {
+        "s1": {
+          "num": "01",
+          "title": "Discovery",
+          "desc": "Analisis de mercado, identificacion de oportunidades, validacion del concepto."
+        },
+        "s2": {
+          "num": "02",
+          "title": "Build",
+          "desc": "Diseno, desarrollo y testing de la plataforma a traves de Hub DE."
+        },
+        "s3": {
+          "num": "03",
+          "title": "Launch",
+          "desc": "Go-to-market, adquisicion de usuarios, iteracion basada en datos."
+        },
+        "s4": {
+          "num": "04",
+          "title": "Scale",
+          "desc": "Optimizacion, expansion a nuevos mercados, crecimiento sostenible."
+        }
+      }
+    }
   },
   "news": {
     "label": "Novedades",
@@ -53,9 +203,54 @@
     "desc": "Descarga nuestra app de movilidad premium para Ibiza.",
     "button": "Descarga ORYX"
   },
-  "cta": { "title": "Tienes un proyecto?", "desc": "Partnership, inversion o colaboracion tecnologica — estamos abiertos a explorar nuevas oportunidades.", "button": "Hablemos" },
-  "contact": { "label": "Contacto", "pageTitle": "Hablemos", "desc": "Siempre estamos abiertos a nuevas oportunidades de colaboracion, partnership e inversion.", "email": "Email", "response": "Respuesta", "responseVal": "Dentro de 24 horas", "location": "Sede", "locationVal": "Europa", "form": { "name": "Nombre", "namePh": "Tu nombre", "email": "Email", "emailPh": "tu@email.com", "company": "Empresa", "companyPh": "Empresa (opcional)", "interest": "Interes", "interestPh": "Selecciona", "interests": { "partnership": "Partnership", "investment": "Inversion", "tech": "Colaboracion Tecnologica", "other": "Otro" }, "message": "Mensaje", "messagePh": "Cuentanos tu idea...", "send": "Enviar", "sending": "Enviando...", "sent": "Enviado", "sentDesc": "Te responderemos en 24 horas.", "another": "Enviar otro" } },
-  "footer": { "desc": "Grupo de innovacion digital. Creamos, desarrollamos y lanzamos nuestros propios productos tecnologicos.", "nav": "Navegacion", "connect": "Contacto", "email": "Email", "linkedin": "LinkedIn", "privacy": "Privacidad", "terms": "Terminos", "rights": "Todos los derechos reservados." },
+  "cta": {
+    "title": "Tienes un proyecto?",
+    "desc": "Partnership, inversion o colaboracion tecnologica — estamos abiertos a explorar nuevas oportunidades.",
+    "button": "Hablemos"
+  },
+  "contact": {
+    "label": "Contacto",
+    "pageTitle": "Hablemos",
+    "desc": "Siempre estamos abiertos a nuevas oportunidades de colaboracion, partnership e inversion.",
+    "email": "Email",
+    "response": "Respuesta",
+    "responseVal": "Dentro de 24 horas",
+    "location": "Sede",
+    "locationVal": "Europa",
+    "form": {
+      "name": "Nombre",
+      "namePh": "Tu nombre",
+      "email": "Email",
+      "emailPh": "tu@email.com",
+      "company": "Empresa",
+      "companyPh": "Empresa (opcional)",
+      "interest": "Interes",
+      "interestPh": "Selecciona",
+      "interests": {
+        "partnership": "Partnership",
+        "investment": "Inversion",
+        "tech": "Colaboracion Tecnologica",
+        "other": "Otro"
+      },
+      "message": "Mensaje",
+      "messagePh": "Cuentanos tu idea...",
+      "send": "Enviar",
+      "sending": "Enviando...",
+      "sent": "Enviado",
+      "sentDesc": "Te responderemos en 24 horas.",
+      "another": "Enviar otro"
+    }
+  },
+  "footer": {
+    "desc": "Grupo de innovacion digital. Creamos, desarrollamos y lanzamos nuestros propios productos tecnologicos.",
+    "nav": "Navegacion",
+    "connect": "Contacto",
+    "email": "Email",
+    "linkedin": "LinkedIn",
+    "privacy": "Privacidad",
+    "terms": "Terminos",
+    "rights": "Todos los derechos reservados."
+  },
   "cookies": {
     "message": "Usamos cookies tecnicas para el funcionamiento del sitio y cookies analiticas para mejorar tu experiencia.",
     "learnMore": "Politica de Cookies",
@@ -66,13 +261,78 @@
     "title": "Politica de Cookies",
     "lastUpdate": "Ultima actualizacion",
     "sections": {
-      "what": { "title": "Que son las Cookies", "content": "Las cookies son pequenos archivos de texto que los sitios web guardan en tu dispositivo. Ayudan al funcionamiento del sitio y mejoran la experiencia de usuario." },
-      "types": { "title": "Tipos de Cookies", "content": "Cookies tecnicas: necesarias para el funcionamiento del sitio (sesion, preferencias de idioma). No requieren consentimiento. Cookies analiticas: Google Analytics, para analizar el trafico de forma anonima. Se activan solo con tu consentimiento." },
-      "thirdParty": { "title": "Cookies de Terceros", "content": "El sitio puede usar servicios de terceros (Google Analytics) que instalan sus propias cookies." },
-      "manage": { "title": "Gestion de Cookies", "content": "Puedes gestionar las preferencias de cookies en cualquier momento desde la configuracion de tu navegador." },
-      "contact": { "title": "Contacto", "content": "Para preguntas: info@digitalenergy.solutions." }
+      "what": {
+        "title": "Que son las Cookies",
+        "content": "Las cookies son pequenos archivos de texto que los sitios web guardan en tu dispositivo. Ayudan al funcionamiento del sitio y mejoran la experiencia de usuario."
+      },
+      "types": {
+        "title": "Tipos de Cookies",
+        "content": "Cookies tecnicas: necesarias para el funcionamiento del sitio (sesion, preferencias de idioma). No requieren consentimiento. Cookies analiticas: Google Analytics, para analizar el trafico de forma anonima. Se activan solo con tu consentimiento."
+      },
+      "thirdParty": {
+        "title": "Cookies de Terceros",
+        "content": "El sitio puede usar servicios de terceros (Google Analytics) que instalan sus propias cookies."
+      },
+      "manage": {
+        "title": "Gestion de Cookies",
+        "content": "Puedes gestionar las preferencias de cookies en cualquier momento desde la configuracion de tu navegador."
+      },
+      "contact": {
+        "title": "Contacto",
+        "content": "Para preguntas: info@digitalenergy.solutions."
+      }
     }
   },
-  "privacy": { "title": "Politica de Privacidad", "lastUpdate": "Ultima actualizacion", "sections": { "intro": { "title": "Introduccion", "content": "Digital Energy Ltd. protege tu privacidad." }, "data": { "title": "Datos", "content": "Solo recopilamos datos del formulario de contacto." }, "purpose": { "title": "Finalidad", "content": "Usamos los datos para responder consultas." }, "retention": { "title": "Retencion", "content": "Los datos se conservan solo lo necesario." }, "rights": { "title": "Derechos", "content": "Contacta info@digitalenergy.solutions para acceso a tus datos." }, "contact": { "title": "Contacto", "content": "info@digitalenergy.solutions" } } },
-  "terms": { "title": "Terminos de Servicio", "lastUpdate": "Ultima actualizacion", "sections": { "general": { "title": "General", "content": "Sitio operado por Digital Energy Ltd." }, "ip": { "title": "Propiedad Intelectual", "content": "Todo el contenido es propiedad de Digital Energy Ltd." }, "liability": { "title": "Responsabilidad", "content": "Informacion con fines informativos." }, "contact": { "title": "Contacto", "content": "info@digitalenergy.solutions" } } }
+  "privacy": {
+    "title": "Politica de Privacidad",
+    "lastUpdate": "Ultima actualizacion",
+    "sections": {
+      "intro": {
+        "title": "Introduccion",
+        "content": "Digital Energy Ltd. protege tu privacidad."
+      },
+      "data": {
+        "title": "Datos",
+        "content": "Solo recopilamos datos del formulario de contacto."
+      },
+      "purpose": {
+        "title": "Finalidad",
+        "content": "Usamos los datos para responder consultas."
+      },
+      "retention": {
+        "title": "Retencion",
+        "content": "Los datos se conservan solo lo necesario."
+      },
+      "rights": {
+        "title": "Derechos",
+        "content": "Contacta info@digitalenergy.solutions para acceso a tus datos."
+      },
+      "contact": {
+        "title": "Contacto",
+        "content": "info@digitalenergy.solutions"
+      }
+    }
+  },
+  "terms": {
+    "title": "Terminos de Servicio",
+    "lastUpdate": "Ultima actualizacion",
+    "sections": {
+      "general": {
+        "title": "General",
+        "content": "Sitio operado por Digital Energy Ltd."
+      },
+      "ip": {
+        "title": "Propiedad Intelectual",
+        "content": "Todo el contenido es propiedad de Digital Energy Ltd."
+      },
+      "liability": {
+        "title": "Responsabilidad",
+        "content": "Informacion con fines informativos."
+      },
+      "contact": {
+        "title": "Contacto",
+        "content": "info@digitalenergy.solutions"
+      }
+    }
+  }
 }

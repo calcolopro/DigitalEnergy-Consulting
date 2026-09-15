@@ -112,8 +112,64 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* ===== AI AGENTS ===== */}
+      <section className="sec border-t border-hair bg-surface">
+        <div className="wrap">
+          <div className="grid gap-10 md:grid-cols-12">
+            <div className="md:col-span-5">
+              <AnimatedSection>
+                <p className="label mb-3">{t('agents.label')}</p>
+                <h2 className="mb-5">{t('agents.title')}</h2>
+                <div className="rule-brand mb-6" />
+                <p className="body max-w-[46ch]">{t('agents.desc')}</p>
+              </AnimatedSection>
+
+              <AnimatedSection delay={0.1}>
+                <div className="mt-8 rounded-lg border border-hair bg-raised p-5">
+                  <p className="label label-brand mb-2 flex items-center gap-2">
+                    <span className="inline-block h-1.5 w-1.5 shrink-0 animate-pulse rounded-full bg-brand" />
+                    {t('agents.proofLabel')}
+                  </p>
+                  <p className="body-sm text-ink">{t('agents.proof')}</p>
+                  <a
+                    href="https://ibizamigo.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="link mt-3"
+                  >
+                    ibizamigo.com &#8599;
+                  </a>
+                </div>
+              </AnimatedSection>
+
+              <AnimatedSection delay={0.15}>
+                <Link href="/contatti" className="btn btn-brand mt-7">
+                  {t('agents.cta')} &rarr;
+                </Link>
+              </AnimatedSection>
+            </div>
+
+            <div className="md:col-span-7">
+              <ul className="grid gap-3 sm:grid-cols-2">
+                {(['a1', 'a2', 'a3', 'a4'] as const).map((key, i) => (
+                  <li key={key} className="h-full">
+                    <AnimatedSection delay={i * 0.06} className="h-full">
+                      <div className="card h-full">
+                        <span className="step-num">{String(i + 1).padStart(2, '0')}</span>
+                        <h3 className="mb-2 mt-3">{t(`agents.items.${key}.title`)}</h3>
+                        <p className="body-sm">{t(`agents.items.${key}.desc`)}</p>
+                      </div>
+                    </AnimatedSection>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* ===== STATS ===== */}
-      <section className="sec-tight border-y border-hair bg-surface">
+      <section className="sec-tight border-y border-hair">
         <div className="wrap">
           <AnimatedSection>
             <dl className="grid grid-cols-2 gap-8 md:grid-cols-4">
