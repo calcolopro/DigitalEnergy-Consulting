@@ -1,3 +1,74 @@
+import type { Metadata } from 'next'
+
+/**
+ * Per-language metadata. Until now every locale served the Italian title, so
+ * a Spanish visitor's browser tab — and anything that shares the link — read
+ * "Gruppo di Innovazione Digitale". Visible the moment the URL is sent to
+ * someone, which is exactly what it is for.
+ */
+const META: Record<string, { title: string; description: string; ogLocale: string }> = {
+  it: {
+    title: 'Digital Energy | Gruppo di innovazione digitale',
+    description:
+      'Progettiamo, sviluppiamo e lanciamo prodotti digitali propri: ORYX, Ibiza Amigo, Scanix, CalcoloPro+, Hub DE. E costruiamo agenti AI che lavorano dentro le aziende.',
+    ogLocale: 'it_IT',
+  },
+  en: {
+    title: 'Digital Energy | Digital innovation group',
+    description:
+      'We design, build and launch our own digital products: ORYX, Ibiza Amigo, Scanix, CalcoloPro+, Hub DE. And we build AI agents that do real work inside a business.',
+    ogLocale: 'en_US',
+  },
+  es: {
+    title: 'Digital Energy | Grupo de innovación digital',
+    description:
+      'Diseñamos, desarrollamos y lanzamos nuestros propios productos digitales: ORYX, Ibiza Amigo, Scanix, CalcoloPro+, Hub DE. Y creamos agentes de IA que trabajan dentro de una empresa.',
+    ogLocale: 'es_ES',
+  },
+  bg: {
+    title: 'Digital Energy | Група за дигитални продукти',
+    description:
+      'Проектираме, строим и пускаме собствени дигитални продукти: ORYX, Ibiza Amigo, Scanix, CalcoloPro+, Hub DE. И правим AI агенти, които вършат истинска работа във фирмата.',
+    ogLocale: 'bg_BG',
+  },
+}
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>
+}): Promise<Metadata> {
+  const { locale } = await params
+  const m = META[locale] ?? META.it
+  const url = `https://digitalenergy.solutions/${locale}`
+  return {
+    // `absolute` because the root layout appends "| Digital Energy" to every
+    // title, and the name is already in these — otherwise Spanish reads
+    // "Digital Energy | Grupo de innovación digital | Digital Energy".
+    title: { absolute: m.title },
+    description: m.description,
+    alternates: {
+      canonical: url,
+      languages: Object.fromEntries(
+        Object.keys(META).map((l) => [l, `https://digitalenergy.solutions/${l}`]),
+      ),
+    },
+    openGraph: {
+      type: 'website',
+      siteName: 'Digital Energy',
+      locale: m.ogLocale,
+      url,
+      title: m.title,
+      description: m.description,
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: m.title,
+      description: m.description,
+    },
+  }
+}
+
 import { NextIntlClientProvider } from 'next-intl'
 import { getMessages, setRequestLocale } from 'next-intl/server'
 import { routing } from '@/i18n/routing'
