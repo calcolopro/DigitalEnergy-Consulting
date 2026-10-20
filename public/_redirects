@@ -1,0 +1,5 @@
+# Cloudflare Pages redirects (replaces vercel.json, 20.10.2026).
+# German was never published; old links go to English.
+/de /en 302
+/de/* /en/:splat 302
+/deutsch /en 302
