@@ -1,8 +1,12 @@
 'use client'
 
+import { Link } from '@/i18n/routing'
+
 type Project = {
   name: string
   href: string
+  /** Page on this site (locale-aware link) instead of an external site. */
+  internal?: boolean
   /** Artwork logo: separate file per theme (ink = for light bg, paper = for dark bg). */
   art?: { ink: string; paper: string; height: string }
   /** Fallback typographic wordmark. `mark` is rendered in the brand colour. */
@@ -20,24 +24,15 @@ export const PROJECTS: Project[] = [
     href: 'https://ibizamigo.com',
     art: { ink: '/logos/ibizamigo-ink.png', paper: '/logos/ibizamigo-paper.png', height: 'h-[24px] md:h-[27px]' },
   },
-  { name: 'Scanix', href: 'https://scanix.pro', type: { lead: 'Scan', mark: 'i', tail: 'x' } },
-  { name: 'CalcoloPro+', href: 'https://calcolo-pro.com', type: { lead: 'CalcoloPro', mark: '+' } },
-  { name: 'Hub DE', href: 'https://hub-de.com', type: { lead: 'Hub ', mark: 'DE' } },
+  { name: 'Wood Design Ibiza', href: '/portfolio/wood-design', internal: true, type: { lead: 'Wood Design ', mark: 'Ibiza' } },
 ]
 
 export default function ProjectLogos({ items = PROJECTS }: { items?: Project[] }) {
   return (
-    <ul className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-5">
+    <ul className="grid grid-cols-1 gap-3 sm:grid-cols-3">
       {items.map(p => (
         <li key={p.name}>
-          <a
-            href={p.href}
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label={p.name}
-            title={p.name}
-            className="logo-cell group h-full"
-          >
+          <LogoLink p={p}>
             {p.art ? (
               <>
                 {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -52,9 +47,19 @@ export default function ProjectLogos({ items = PROJECTS }: { items?: Project[] }
                 {p.type?.tail}
               </span>
             )}
-          </a>
+          </LogoLink>
         </li>
       ))}
     </ul>
+  )
+}
+
+function LogoLink({ p, children }: { p: Project; children: React.ReactNode }) {
+  const common = { 'aria-label': p.name, title: p.name, className: 'logo-cell group h-full' }
+  if (p.internal) return <Link href={p.href} {...common}>{children}</Link>
+  return (
+    <a href={p.href} target="_blank" rel="noopener noreferrer" {...common}>
+      {children}
+    </a>
   )
 }

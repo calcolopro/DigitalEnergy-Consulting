@@ -174,7 +174,7 @@ export default function HomePage() {
           <AnimatedSection>
             <dl className="grid grid-cols-2 gap-8 md:grid-cols-4">
               {[
-                { v: '8', s: '', l: t('stats.products') },
+                { v: '3', s: '', l: t('stats.products') },
                 { v: '8', s: '+', l: t('stats.countries') },
                 { v: '99.9', s: '%', l: t('stats.uptime') },
                 { v: '2023', s: '', l: t('stats.year') },

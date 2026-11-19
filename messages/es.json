@@ -15,7 +15,7 @@
   "what": {
     "label": "Que Hacemos",
     "title": "No somos una consultora tradicional",
-    "desc": "Digital Energy identifica oportunidades de mercado, crea productos digitales y los lleva al exito. Cada proyecto nace de nuestra vision y se desarrolla internamente a traves de Hub DE.",
+    "desc": "Digital Energy identifica oportunidades de mercado, crea productos digitales y los lleva al éxito. Cada proyecto nace de nuestra visión y lo desarrolla internamente nuestro propio equipo.",
     "items": {
       "ideation": {
         "title": "Ideacion y Estrategia",
@@ -23,7 +23,7 @@
       },
       "development": {
         "title": "Desarrollo y Tecnologia",
-        "desc": "A traves de Hub DE construimos plataformas SaaS, apps y soluciones AI con tecnologias de vanguardia."
+        "desc": "Construimos plataformas SaaS, apps y soluciones de IA con tecnologías de vanguardia."
       },
       "launch": {
         "title": "Lanzamiento y Crecimiento",
@@ -64,70 +64,7 @@
   "projects": {
     "label": "Nuestros Proyectos",
     "title": "Portfolio",
-    "desc": "Productos digitales creados, desarrollados y gestionados por Digital Energy — del concepto al mercado internacional.",
-    "oryx": {
-      "label": "Movilidad Premium",
-      "title": "ORYX",
-      "desc": "Plataforma de movilidad privada de lujo, ahora disponible en iOS App Store. Reserva shuttles, chofer, seguridad y yacht charter en Ibiza, Mykonos, Dubai y Monaco — todo en una app.",
-      "status": "Live",
-      "tags": [
-        "Movilidad",
-        "Lujo",
-        "Marketplace",
-        "App iOS",
-        "App Store"
-      ]
-    },
-    "ibizaamigo": {
-      "label": "Concierge Digital",
-      "title": "Ibiza Amigo",
-      "desc": "Tu concierge personal AI para Ibiza via WhatsApp. Restaurantes, clubs, yates, transfers y servicios VIP — recomendados y reservados en tiempo real por nuestra inteligencia artificial.",
-      "status": "Lanzamiento 1 Mayo",
-      "tags": [
-        "AI",
-        "WhatsApp",
-        "Concierge",
-        "Ibiza",
-        "Viajes"
-      ]
-    },
-    "scanix": {
-      "label": "Gestion de Facturas AI",
-      "title": "Scanix",
-      "desc": "Plataforma AI para escaneo y gestion de facturas. Fotografa una factura, la AI la lee y tu contador recibe un reporte listo. OCR inteligente, categorizacion automatica y compartir con un clic.",
-      "status": "Live",
-      "tags": [
-        "AI",
-        "OCR",
-        "Fintech",
-        "SaaS",
-        "Facturacion"
-      ]
-    },
-    "calcolopro": {
-      "label": "Plataforma SaaS",
-      "title": "CalcoloPro+",
-      "desc": "Plataforma profesional de gestion de portfolio con extraccion OCR automatizada, dashboard analytics en tiempo real e integracion con Telegram bot.",
-      "status": "Activo",
-      "tags": [
-        "SaaS",
-        "Analytics",
-        "OCR",
-        "Fintech"
-      ]
-    },
-    "hubde": {
-      "label": "Estudio de Software",
-      "title": "Hub Digital Energy",
-      "desc": "Nuestro estudio de desarrollo de software. Especializado en plataformas SaaS, automatizacion, dashboards, integraciones AI y consultoria digital.",
-      "status": "Activo",
-      "tags": [
-        "Desarrollo",
-        "SaaS",
-        "AI",
-        "Automatizacion"
-      ]
-    }
+    "desc": "Productos digitales creados, desarrollados y gestionados por Digital Energy — del concepto al mercado internacional."
   },
   "stats": {
     "products": "Productos",
@@ -175,7 +112,7 @@
         "s2": {
           "num": "02",
           "title": "Build",
-          "desc": "Diseno, desarrollo y testing de la plataforma a traves de Hub DE."
+          "desc": "Diseño, desarrollo y testing de la plataforma."
         },
         "s3": {
           "num": "03",
@@ -189,13 +126,6 @@
         }
       }
     }
-  },
-  "news": {
-    "label": "Novedades",
-    "title": "Ibiza Amigo: Tu Concierge AI",
-    "desc": "Desde el 1 de mayo de 2026, tu concierge personal para Ibiza esta a un mensaje de WhatsApp. Restaurantes, clubs, barcos, transfers — todo recomendado y reservado en tiempo real por nuestra AI.",
-    "cta": "Descubre mas",
-    "badge": "Proximamente"
   },
   "oryx_cta": {
     "label": "Para empresas",
@@ -334,5 +264,50 @@
         "content": "info@digitalenergy.solutions"
       }
     }
+  },
+  "woodDesign": {
+    "label": "Caso real · Gestión de taller",
+    "title": "Wood Design Ibiza",
+    "lead": "El sistema con el que funciona una carpintería en Ibiza. Cada trabajo en un solo sitio — presupuesto, proforma, factura, horas, pagos y fotos — desde el móvil.",
+    "facts": [
+      "En uso desde noviembre de 2026",
+      "Acceso con Face ID",
+      "En español, en cualquier móvil"
+    ],
+    "demoLabel": "Demo en vivo",
+    "demoNote": "Es la demo real con datos de ejemplo. Tócala: funciona.",
+    "openDemo": "Abrir la demo a pantalla completa",
+    "featuresLabel": "Qué lleva dentro",
+    "featuresTitle": "Todo el taller en el bolsillo",
+    "items": {
+      "obra": {
+        "title": "Cada trabajo es una obra",
+        "desc": "Una puerta o una cocina es una obra nueva. Dentro: presupuesto, proformas, facturas, fotos, medidas, gastos y etapa."
+      },
+      "docs": {
+        "title": "Presupuestos y facturas en segundos",
+        "desc": "Series de numeración propias, facturas bloqueadas al emitirlas, rectificativas, descuentos controlados. PDF y envío por WhatsApp."
+      },
+      "pay": {
+        "title": "Pagos por hitos",
+        "desc": "Plan de pagos 60/30/10, anticipos y pagos libres, una proforma para cada hito."
+      },
+      "hours": {
+        "title": "Las horas se convierten en factura",
+        "desc": "Las horas apuntadas en cada obra pasan a una factura por administración al precio por hora."
+      },
+      "ai": {
+        "title": "La IA lee los tickets",
+        "desc": "Foto del ticket → proveedor, NIF, fecha, base e IVA rellenados solos. Almacén del taller y material usado en cada obra."
+      },
+      "close": {
+        "title": "Cierre de mes para la gestoría",
+        "desc": "Un botón: facturas emitidas, fotos de los tickets y hojas de cálculo en un solo ZIP, listo para la gestoría."
+      }
+    },
+    "signTitle": "Firmado en cada documento",
+    "signDesc": "Cada presupuesto y cada factura del taller lleva «Software: Digital Energy». Si has llegado desde uno de ellos: esto es lo que lo hizo.",
+    "ctaTitle": "¿Quieres uno para tu negocio?",
+    "ctaDesc": "Construimos el mismo tipo de sistema alrededor de cómo ya trabajas: obras, personas, documentos, pagos."
   }
 }

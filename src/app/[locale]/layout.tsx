@@ -10,25 +10,25 @@ const META: Record<string, { title: string; description: string; ogLocale: strin
   it: {
     title: 'Digital Energy | Gruppo di innovazione digitale',
     description:
-      'Progettiamo, sviluppiamo e lanciamo prodotti digitali propri: ORYX, Ibiza Amigo, Scanix, CalcoloPro+, Hub DE. E costruiamo agenti AI che lavorano dentro le aziende.',
+      'Progettiamo, sviluppiamo e lanciamo prodotti digitali propri: ORYX, Ibiza Amigo, Wood Design Ibiza. E costruiamo agenti AI che lavorano dentro le aziende.',
     ogLocale: 'it_IT',
   },
   en: {
     title: 'Digital Energy | Digital innovation group',
     description:
-      'We design, build and launch our own digital products: ORYX, Ibiza Amigo, Scanix, CalcoloPro+, Hub DE. And we build AI agents that do real work inside a business.',
+      'We design, build and launch our own digital products: ORYX, Ibiza Amigo, Wood Design Ibiza. And we build AI agents that do real work inside a business.',
     ogLocale: 'en_US',
   },
   es: {
     title: 'Digital Energy | Grupo de innovación digital',
     description:
-      'Diseñamos, desarrollamos y lanzamos nuestros propios productos digitales: ORYX, Ibiza Amigo, Scanix, CalcoloPro+, Hub DE. Y creamos agentes de IA que trabajan dentro de una empresa.',
+      'Diseñamos, desarrollamos y lanzamos nuestros propios productos digitales: ORYX, Ibiza Amigo, Wood Design Ibiza. Y creamos agentes de IA que trabajan dentro de una empresa.',
     ogLocale: 'es_ES',
   },
   bg: {
     title: 'Digital Energy | Група за дигитални продукти',
     description:
-      'Проектираме, строим и пускаме собствени дигитални продукти: ORYX, Ibiza Amigo, Scanix, CalcoloPro+, Hub DE. И правим AI агенти, които вършат истинска работа във фирмата.',
+      'Проектираме, строим и пускаме собствени дигитални продукти: ORYX, Ibiza Amigo, Wood Design Ibiza. И правим AI агенти, които вършат истинска работа във фирмата.',
     ogLocale: 'bg_BG',
   },
 }
@@ -103,7 +103,7 @@ export default async function LocaleLayout({
     foundingDate: '2023',
     email: 'info@digitalenergy.solutions',
     sameAs: [],
-    knowsAbout: ['SaaS', 'Luxury Mobility', 'AI Concierge', 'AI Invoice Management', 'Fintech', 'Software Development'],
+    knowsAbout: ['SaaS', 'Private Mobility', 'AI Agents', 'Business Management Software', 'Software Development'],
     makesOffer: [
       {
         '@type': 'Offer',
@@ -122,7 +122,7 @@ export default async function LocaleLayout({
           '@type': 'SoftwareApplication',
           name: 'Ibiza Amigo',
           applicationCategory: 'TravelApplication',
-          description: 'AI-powered WhatsApp concierge for Ibiza — restaurants, clubs, boats, transfers and VIP services.',
+          description: 'AI assistant on WhatsApp for Ibiza — restaurants, clubs, boats, transfers and VIP services.',
           url: 'https://ibizamigo.com',
         },
       },
@@ -130,20 +130,10 @@ export default async function LocaleLayout({
         '@type': 'Offer',
         itemOffered: {
           '@type': 'SoftwareApplication',
-          name: 'Scanix',
+          name: 'Wood Design Ibiza — workshop management',
           applicationCategory: 'BusinessApplication',
-          description: 'AI-powered invoice scanning and management platform with OCR, automatic categorization and accountant sharing.',
-          url: 'https://scanix.pro',
-        },
-      },
-      {
-        '@type': 'Offer',
-        itemOffered: {
-          '@type': 'SoftwareApplication',
-          name: 'CalcoloPro+',
-          applicationCategory: 'FinanceApplication',
-          description: 'Professional portfolio management platform with OCR and real-time analytics.',
-          url: 'https://calcolo-pro.com',
+          description: 'Management system for a carpentry workshop in Ibiza: jobs, quotes, invoices, hours, staged payments and AI receipt reading, on the phone.',
+          url: 'https://digitalenergy.solutions/en/portfolio/wood-design',
         },
       },
     ],

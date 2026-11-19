@@ -15,7 +15,7 @@
   "what": {
     "label": "What We Do",
     "title": "Not a traditional consultancy",
-    "desc": "Digital Energy identifies market opportunities, creates digital products and drives them to success. Every project is born from our vision and developed internally through Hub DE, our technology arm.",
+    "desc": "Digital Energy identifies market opportunities, creates digital products and drives them to success. Every project is born from our vision and developed in-house by our own team.",
     "items": {
       "ideation": {
         "title": "Ideation & Strategy",
@@ -23,7 +23,7 @@
       },
       "development": {
         "title": "Development & Technology",
-        "desc": "Through Hub DE we build SaaS platforms, apps and AI solutions with cutting-edge technologies."
+        "desc": "We build SaaS platforms, apps and AI solutions with cutting-edge technologies."
       },
       "launch": {
         "title": "Launch & Growth",
@@ -64,70 +64,7 @@
   "projects": {
     "label": "Our Projects",
     "title": "Portfolio",
-    "desc": "Digital products created, developed and managed by Digital Energy — from concept to international market.",
-    "oryx": {
-      "label": "Premium Mobility",
-      "title": "ORYX",
-      "desc": "Private luxury mobility platform, now available on the iOS App Store. Book shuttles, chauffeurs, security and yacht charters in Ibiza, Mykonos, Dubai and Monaco — all in one app.",
-      "status": "Live",
-      "tags": [
-        "Mobility",
-        "Luxury",
-        "Marketplace",
-        "iOS App",
-        "App Store"
-      ]
-    },
-    "ibizaamigo": {
-      "label": "Digital Concierge",
-      "title": "Ibiza Amigo",
-      "desc": "Your personal AI concierge for Ibiza via WhatsApp. Restaurants, clubs, yachts, transfers and VIP services — recommended and booked in real time by our artificial intelligence.",
-      "status": "Launching May 1",
-      "tags": [
-        "AI",
-        "WhatsApp",
-        "Concierge",
-        "Ibiza",
-        "Travel"
-      ]
-    },
-    "scanix": {
-      "label": "AI Invoice Management",
-      "title": "Scanix",
-      "desc": "AI-powered invoice scanning and management platform. Snap a receipt, AI reads it, your accountant gets a ready report. Smart OCR, automatic categorization and one-click sharing.",
-      "status": "Live",
-      "tags": [
-        "AI",
-        "OCR",
-        "Fintech",
-        "SaaS",
-        "Invoicing"
-      ]
-    },
-    "calcolopro": {
-      "label": "SaaS Platform",
-      "title": "CalcoloPro+",
-      "desc": "Professional portfolio management platform with automated OCR data extraction, real-time analytics dashboard and Telegram bot integration.",
-      "status": "Live",
-      "tags": [
-        "SaaS",
-        "Analytics",
-        "OCR",
-        "Fintech"
-      ]
-    },
-    "hubde": {
-      "label": "Software Studio",
-      "title": "Hub Digital Energy",
-      "desc": "Our software development studio. Specializing in SaaS platforms, automation, analytics dashboards, AI integrations and digital consulting.",
-      "status": "Active",
-      "tags": [
-        "Development",
-        "SaaS",
-        "AI",
-        "Automation"
-      ]
-    }
+    "desc": "Digital products created, developed and managed by Digital Energy — from concept to international market."
   },
   "stats": {
     "products": "Products",
@@ -175,7 +112,7 @@
         "s2": {
           "num": "02",
           "title": "Build",
-          "desc": "Design, development and platform testing through Hub DE."
+          "desc": "Design, development and platform testing."
         },
         "s3": {
           "num": "03",
@@ -189,13 +126,6 @@
         }
       }
     }
-  },
-  "news": {
-    "label": "News",
-    "title": "Ibiza Amigo: Your AI Concierge",
-    "desc": "Starting May 1st, 2026, your personal Ibiza concierge is just a WhatsApp message away. Restaurants, clubs, boats, transfers — all recommended and booked in real time by our AI.",
-    "cta": "Learn more",
-    "badge": "Coming Soon"
   },
   "oryx_cta": {
     "label": "For operators",
@@ -334,5 +264,50 @@
         "content": "For questions: info@digitalenergy.solutions."
       }
     }
+  },
+  "woodDesign": {
+    "label": "Real case · Workshop management",
+    "title": "Wood Design Ibiza",
+    "lead": "The system that runs a carpentry workshop in Ibiza. Every job in one place — quote, proforma, invoice, hours, payments and photos — from the phone.",
+    "facts": [
+      "In use since November 2026",
+      "Face ID login",
+      "In Spanish, on any phone"
+    ],
+    "demoLabel": "Live demo",
+    "demoNote": "This is the real demo with sample data. Tap it — it works.",
+    "openDemo": "Open the demo full screen",
+    "featuresLabel": "What's inside",
+    "featuresTitle": "A whole workshop in your pocket",
+    "items": {
+      "obra": {
+        "title": "Every job is an «obra»",
+        "desc": "A door or a kitchen becomes a new obra. Inside: quote, proformas, invoices, photos, measurements, expenses and stage."
+      },
+      "docs": {
+        "title": "Quotes and invoices in seconds",
+        "desc": "Own numbering series, invoices locked once issued, rectifying invoices, discounts tracked. PDF and WhatsApp sharing."
+      },
+      "pay": {
+        "title": "Payments by milestone",
+        "desc": "A 60/30/10 payment plan, deposits and free payments, a proforma for every milestone."
+      },
+      "hours": {
+        "title": "Hours become an invoice",
+        "desc": "Hours logged on each job turn into an invoice «por administración» at the hourly rate."
+      },
+      "ai": {
+        "title": "AI reads the receipts",
+        "desc": "Photo of a receipt → supplier, tax ID, date, base and VAT filled in by themselves. Workshop stock and material used per job."
+      },
+      "close": {
+        "title": "Month close for the accountant",
+        "desc": "One button: issued invoices, receipt photos and spreadsheets in a single ZIP, ready for the gestoría."
+      }
+    },
+    "signTitle": "Signed on every document",
+    "signDesc": "Every quote and invoice from the workshop carries «Software: Digital Energy». If you got here from one of them — this is what built it.",
+    "ctaTitle": "Want one for your business?",
+    "ctaDesc": "We build the same kind of system around the way you already work: jobs, people, documents, payments."
   }
 }
