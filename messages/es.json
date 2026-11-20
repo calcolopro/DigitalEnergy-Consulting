@@ -308,6 +308,17 @@
     "signTitle": "Firmado en cada documento",
     "signDesc": "Cada presupuesto y cada factura del taller lleva «Software: Digital Energy». Si has llegado desde uno de ellos: esto es lo que lo hizo.",
     "ctaTitle": "¿Quieres uno para tu negocio?",
-    "ctaDesc": "Construimos el mismo tipo de sistema alrededor de cómo ya trabajas: obras, personas, documentos, pagos."
+    "ctaDesc": "No solo talleres. Hacemos software a medida para cualquier negocio, alrededor de cómo ya trabajas.",
+    "buildTypes": [
+      "CRM",
+      "Programas de gestión a medida",
+      "Presupuestos y facturas",
+      "Reservas",
+      "Almacén",
+      "Apps para el móvil",
+      "Agentes con IA",
+      "Webs"
+    ],
+    "pricing": "A medida desde 490 € · mantenimiento desde 49 €/mes · IVA no incluido"
   }
 }

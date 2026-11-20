@@ -275,13 +275,13 @@
       "In spagnolo, su qualsiasi telefono"
     ],
     "demoLabel": "Demo dal vivo",
-    "demoNote": "Questa e' la demo reale con dati di esempio. Toccala: funziona.",
+    "demoNote": "Questa è la demo reale con dati di esempio. Toccala: funziona.",
     "openDemo": "Apri la demo a schermo intero",
-    "featuresLabel": "Cosa c'e' dentro",
+    "featuresLabel": "Cosa c'è dentro",
     "featuresTitle": "Un'officina intera in tasca",
     "items": {
       "obra": {
-        "title": "Ogni lavoro e' una «obra»",
+        "title": "Ogni lavoro è una «obra»",
         "desc": "Una porta o una cucina diventa una nuova obra. Dentro: preventivo, proforma, fatture, foto, misure, spese e stato di avanzamento."
       },
       "docs": {
@@ -306,8 +306,19 @@
       }
     },
     "signTitle": "Firmato su ogni documento",
-    "signDesc": "Ogni preventivo e ogni fattura del laboratorio porta la scritta «Software: Digital Energy». Se sei arrivato qui da uno di quei documenti: e' questo che l'ha costruito.",
-    "ctaTitle": "Ne vuoi uno per la tua attivita'?",
-    "ctaDesc": "Costruiamo lo stesso tipo di sistema intorno a come lavori gia': lavori, persone, documenti, pagamenti."
+    "signDesc": "Ogni preventivo e ogni fattura del laboratorio porta la scritta «Software: Digital Energy». Se sei arrivato qui da uno di quei documenti: è questo che l'ha costruito.",
+    "ctaTitle": "Ne vuoi uno per la tua attività?",
+    "ctaDesc": "Non solo laboratori. Costruiamo software su misura per qualsiasi attività, intorno a come lavori già.",
+    "buildTypes": [
+      "CRM",
+      "Gestionali su misura",
+      "Preventivi e fatture",
+      "Prenotazioni",
+      "Magazzino",
+      "App per il telefono",
+      "Agenti AI",
+      "Siti web"
+    ],
+    "pricing": "Su misura da 490 € · manutenzione da 49 €/mese · IVA esclusa"
   }
 }

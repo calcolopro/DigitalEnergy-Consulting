@@ -11,6 +11,7 @@ const featureKeys = ['obra', 'docs', 'pay', 'hours', 'ai', 'close'] as const
 export default function WoodDesignPage() {
   const t = useTranslations()
   const facts = t.raw('woodDesign.facts') as string[]
+  const buildTypes = t.raw('woodDesign.buildTypes') as string[]
 
   return (
     <>
@@ -109,6 +110,14 @@ export default function WoodDesignPage() {
             <div className="rounded-xl border border-hair bg-surface px-6 py-12 text-center md:px-12 md:py-16">
               <h2 className="mx-auto max-w-[22ch]">{t('woodDesign.ctaTitle')}</h2>
               <p className="body mx-auto mt-4 max-w-[52ch]">{t('woodDesign.ctaDesc')}</p>
+              <ul className="mx-auto mt-8 flex max-w-[60ch] flex-wrap justify-center gap-2">
+                {buildTypes.map(b => (
+                  <li key={b} className="rounded-full border border-hair bg-paper px-3.5 py-1.5 text-[0.85rem] text-ink">
+                    {b}
+                  </li>
+                ))}
+              </ul>
+              <p className="label mt-8">{t('woodDesign.pricing')}</p>
               <Link href="/contatti" className="btn btn-brand mt-8">{t('cta.button')} &rarr;</Link>
             </div>
           </AnimatedSection>

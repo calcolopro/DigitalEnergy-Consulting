@@ -308,6 +308,17 @@
     "signTitle": "Signed on every document",
     "signDesc": "Every quote and invoice from the workshop carries «Software: Digital Energy». If you got here from one of them — this is what built it.",
     "ctaTitle": "Want one for your business?",
-    "ctaDesc": "We build the same kind of system around the way you already work: jobs, people, documents, payments."
+    "ctaDesc": "Not just workshops. We build custom software for any business, around the way you already work.",
+    "buildTypes": [
+      "CRM",
+      "Custom management systems",
+      "Quotes and invoices",
+      "Bookings",
+      "Inventory",
+      "Phone apps",
+      "AI agents",
+      "Websites"
+    ],
+    "pricing": "Custom builds from €490 · maintenance from €49/month · VAT excluded"
   }
 }
